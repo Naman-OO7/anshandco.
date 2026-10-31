@@ -55,6 +55,83 @@
     <meta name="twitter:image" content="https://anshandco.com/android-chrome-512x512.png" />
     <meta name="twitter:image:alt" content="ANSH&CO — Brand Custodians, AI Solutions & Full-Stack Digital Studio" />
 
+    <!-- SYNCHRONOUS CANONICAL & META RESOLVER FOR GOOGLEBOT SPA INDEXING -->
+    <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var page = params.get('page');
+          var caseId = params.get('case');
+          var portfolio = params.get('portfolio') || params.get('member');
+          var newsId = params.get('news');
+          var path = window.location.pathname.replace(/^\/+|\/+$/g, '');
+
+          if (!page && (path === 'what-we-are' || path === 'who-we-are' || path === 'what-we-provide' || path === 'who-trust-us')) {
+            page = path;
+          }
+
+          var canonical = 'https://anshandco.com/';
+          var title = null;
+          var desc = null;
+
+          var pageMeta = {
+            'what-we-are': {
+              url: 'https://anshandco.com/?page=what-we-are',
+              title: 'What We Are? | Brand Custodian & AI Engineering Studio — ANSH&CO',
+              desc: 'Discover ANSH&CO’s 4 core pillars: Strategic Rigor, Visual Architecture, Bespoke Code & AI, and Long-Term Brand Custodianship in Dehradun, India.'
+            },
+            'who-we-are': {
+              url: 'https://anshandco.com/?page=who-we-are',
+              title: 'Who We Are? | Multidisciplinary Engineers, Designers & Strategists — ANSH&CO',
+              desc: 'Meet the 100% in-house collective of full-stack engineers, AI architects, brand strategists, and master video editors at ANSH&CO Studios in Dehradun.'
+            },
+            'what-we-provide': {
+              url: 'https://anshandco.com/?page=what-we-provide',
+              title: 'What We Provide? | Next.js Web Dev, AI Automation, Branding & SEO — ANSH&CO',
+              desc: 'Explore ANSH&CO capabilities: Custom React & Next.js Web Engineering, AI Workflow & CRM Automation, Brand Identity, Technical SEO, and Viral Reel Production.'
+            },
+            'who-trust-us': {
+              url: 'https://anshandco.com/?page=who-trust-us',
+              title: 'Who Trust Us? | Enterprise Partners & Client Case Studies — ANSH&CO',
+              desc: 'Trusted by global leaders including Warner Bros. Discovery, The Coffee Bean & Tea Leaf, Kanpeki, Bharatiyam Beverages, T&T Group, and Disha Publication.'
+            }
+          };
+
+          if (caseId) {
+            canonical = 'https://anshandco.com/?case=' + encodeURIComponent(caseId);
+            title = caseId.replace(/-/g, ' ').toUpperCase() + ' — Case Study | ANSH&CO';
+          } else if (portfolio) {
+            canonical = 'https://anshandco.com/?portfolio=' + encodeURIComponent(portfolio);
+            title = portfolio.replace(/-/g, ' ').toUpperCase() + ' — Specialist Portfolio | ANSH&CO';
+          } else if (newsId) {
+            canonical = 'https://anshandco.com/?news=' + encodeURIComponent(newsId);
+          } else if (page && pageMeta[page]) {
+            canonical = pageMeta[page].url;
+            title = pageMeta[page].title;
+            desc = pageMeta[page].desc;
+          }
+
+          var canEl = document.querySelector('link[rel="canonical"]');
+          if (canEl) canEl.setAttribute('href', canonical);
+          var selfEl = document.querySelector('link[rel="self"]');
+          if (selfEl) selfEl.setAttribute('href', canonical);
+          var ogUrlEl = document.querySelector('meta[property="og:url"]');
+          if (ogUrlEl) ogUrlEl.setAttribute('content', canonical);
+          if (title) {
+            document.title = title;
+            var ogTitleEl = document.querySelector('meta[property="og:title"]');
+            if (ogTitleEl) ogTitleEl.setAttribute('content', title);
+          }
+          if (desc) {
+            var descEl = document.querySelector('meta[name="description"]');
+            if (descEl) descEl.setAttribute('content', desc);
+            var ogDescEl = document.querySelector('meta[property="og:description"]');
+            if (ogDescEl) ogDescEl.setAttribute('content', desc);
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <!-- COMPLETE JSON-LD SCHEMA (ORGANIZATION + LOCALBUSINESS + TEAM + REVIEWS + SERVICES + CASE STUDIES + VIDEOS + BREADCRUMBS + FAQ) -->
     <script type="application/ld+json">
     {
@@ -568,6 +645,21 @@
         </ul>
         <h2>Enterprise Partners</h2>
         <p>Trusted by Kanpeki, The Coffee Bean &amp; Tea Leaf, Warner Bros. Discovery, Bharatiyam Beverages, T&amp;T Group, Disha Publication, and the Embassy of Switzerland in India (SwitzerlandIndia80).</p>
+        <nav aria-label="Primary Site Directory">
+          <h2>Explore ANSH&amp;CO Pages</h2>
+          <ul>
+            <li><a href="https://anshandco.com/">Home — Where it begins?</a></li>
+            <li><a href="https://anshandco.com/?page=what-we-are">What we are? — Brand Custodianship &amp; 4 Core Pillars</a></li>
+            <li><a href="https://anshandco.com/?page=who-we-are">Who we are? — In-House Engineers, Designers &amp; Strategists</a></li>
+            <li><a href="https://anshandco.com/?page=what-we-provide">What we provide? — Next.js Web Dev, AI Workflows &amp; Growth</a></li>
+            <li><a href="https://anshandco.com/?page=who-trust-us">Who Trust us? — Enterprise Partners &amp; Case Studies</a></li>
+            <li><a href="https://anshandco.com/?case=showcase-extension-1">High-Speed Next.js Web Engineering Case Study</a></li>
+            <li><a href="https://anshandco.com/?case=showcase-extension-2">Viral Meme Marketing &amp; High-Converting Ads Case Study</a></li>
+            <li><a href="https://anshandco.com/?case=showcase-extension-3">AI Business Workflow Automation &amp; Custom CRM Case Study</a></li>
+            <li><a href="https://anshandco.com/?portfolio=naman">Naman — Co-Founder &amp; Creative Director Portfolio</a></li>
+            <li><a href="https://anshandco.com/?portfolio=hardeep">Hardeep — Technical Lead Portfolio</a></li>
+          </ul>
+        </nav>
         <p>Contact Leadership: <a href="tel:+917668422047">+91 76684 22047</a> | <a href="tel:+919152762613">+91 91527 62613</a> | <a href="mailto:contact@anshandco.com">contact@anshandco.com</a></p>
       </main>
     </noscript>

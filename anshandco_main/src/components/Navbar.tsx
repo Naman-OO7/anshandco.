@@ -126,10 +126,17 @@ export const Navbar: React.FC<NavbarProps> = ({
         <nav className="hidden lg:flex items-center gap-8 xl:gap-10 text-[14px] font-light">
           {navItems.filter((i) => i.page !== 'home').map((item) => {
             const isActive = currentPage === item.page;
+            const href = item.page === 'home' ? '/' : `/?page=${item.page}`;
             return (
-              <button
+              <a
                 key={item.page}
-                onClick={() => handleItemClick(item.page)}
+                href={href}
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handleItemClick(item.page);
+                  }
+                }}
                 className={`transition-colors relative py-1 cursor-pointer select-none text-[14px] ${
                   isActive 
                     ? 'text-black dark:text-white font-medium after:w-full' 
@@ -137,7 +144,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 } after:absolute after:bottom-0 after:left-0 after:h-[1.5px] after:bg-black dark:after:bg-white after:transition-all after:duration-250`}
               >
                 {item.label}
-              </button>
+              </a>
             );
           })}
         </nav>
@@ -249,10 +256,17 @@ export const Navbar: React.FC<NavbarProps> = ({
             </span>
             {navItems.map((item) => {
               const isActive = currentPage === item.page;
+              const href = item.page === 'home' ? '/' : `/?page=${item.page}`;
               return (
-                <button
+                <a
                   key={item.page}
-                  onClick={() => handleItemClick(item.page)}
+                  href={href}
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey) {
+                      e.preventDefault();
+                      handleItemClick(item.page);
+                    }
+                  }}
                   className={`group flex items-center justify-between py-3.5 border-b border-neutral-100 dark:border-neutral-800 text-left cursor-pointer transition-all duration-200 ${
                     isActive ? 'border-black dark:border-white' : 'hover:border-neutral-300 dark:hover:border-neutral-700'
                   }`}
@@ -277,7 +291,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         : 'text-neutral-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0'
                     }`} 
                   />
-                </button>
+                </a>
               );
             })}
           </nav>

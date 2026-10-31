@@ -20,7 +20,7 @@ git -C "$SYNC_DIR" config user.email "85234010+Naman-OO7@users.noreply.github.co
 echo "=== Syncing workspace files into $SUBFOLDER/ ==="
 mkdir -p "$SYNC_DIR/$SUBFOLDER"
 
-# Copy workspace project files (excluding node_modules, dist, .git, .github-sync, and AI Studio temp attachments)
+# Copy workspace project files (excluding node_modules, dist, .git, .github-sync, and AI Studio temp screenshots)
 tar -cf - \
   --exclude='./node_modules' \
   --exclude='./dist' \
@@ -28,7 +28,8 @@ tar -cf - \
   --exclude='./.git' \
   --exclude='./.github-sync' \
   --exclude='./.aistudio' \
-  --exclude='./public/assets/aistudio' \
+  --exclude='./bun.lock' \
+  --exclude='./public/assets/aistudio/image_*.png' \
   --exclude='./.env' \
   --exclude='./.env.local' \
   -C /app/applet . | tar -xf - -C "$SYNC_DIR/$SUBFOLDER"

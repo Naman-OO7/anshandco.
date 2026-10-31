@@ -31,36 +31,60 @@ export const Footer: React.FC<FooterProps> = ({
           </h4>
           <ul className="flex flex-col gap-3 text-[14px] font-light text-neutral-300">
             <li>
-              <button
-                onClick={() => handlePageClick('what-we-are')}
+              <a
+                href="/?page=what-we-are"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('what-we-are');
+                  }
+                }}
                 className="hover:text-[#e38528] transition-colors cursor-pointer text-left"
               >
                 What we are?
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('who-we-are')}
+              <a
+                href="/?page=who-we-are"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('who-we-are');
+                  }
+                }}
                 className="hover:text-[#e38528] transition-colors cursor-pointer text-left"
               >
                 Who we are?
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('what-we-provide')}
+              <a
+                href="/?page=what-we-provide"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('what-we-provide');
+                  }
+                }}
                 className="hover:text-[#e38528] transition-colors cursor-pointer text-left"
               >
                 What we provide?
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('who-trust-us')}
+              <a
+                href="/?page=who-trust-us"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('who-trust-us');
+                  }
+                }}
                 className="hover:text-[#e38528] transition-colors cursor-pointer text-left"
               >
                 Who Trust us?
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -72,44 +96,74 @@ export const Footer: React.FC<FooterProps> = ({
           </h4>
           <ul className="flex flex-col gap-3 text-[14px] font-light text-neutral-300">
             <li>
-              <button
-                onClick={() => handlePageClick('what-we-provide')}
+              <a
+                href="/?page=what-we-provide"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('what-we-provide');
+                  }
+                }}
                 className="hover:text-white transition-colors cursor-pointer text-left"
               >
                 Web &amp; Mobile Apps
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('what-we-provide')}
+              <a
+                href="/?page=what-we-provide"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('what-we-provide');
+                  }
+                }}
                 className="hover:text-white transition-colors cursor-pointer text-left"
               >
                 Custom CRM &amp; ERPs
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('what-we-provide')}
+              <a
+                href="/?page=what-we-provide"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('what-we-provide');
+                  }
+                }}
                 className="hover:text-white transition-colors cursor-pointer text-left"
               >
                 Digital Marketing &amp; SEO
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('what-we-provide')}
+              <a
+                href="/?page=what-we-provide"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('what-we-provide');
+                  }
+                }}
                 className="hover:text-white transition-colors cursor-pointer text-left"
               >
                 Meta Ads &amp; Social Growth
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('what-we-provide')}
+              <a
+                href="/?page=what-we-provide"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('what-we-provide');
+                  }
+                }}
                 className="hover:text-white transition-colors cursor-pointer text-left"
               >
                 AI Video &amp; Production
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -129,20 +183,32 @@ export const Footer: React.FC<FooterProps> = ({
               </button>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('who-trust-us')}
+              <a
+                href="/?page=who-trust-us"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('who-trust-us');
+                  }
+                }}
                 className="hover:text-white transition-colors cursor-pointer text-left"
               >
                 Client Partnerships
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handlePageClick('home')}
+              <a
+                href="/"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('home');
+                  }
+                }}
                 className="hover:text-white transition-colors cursor-pointer text-left"
               >
                 Home Experience
-              </button>
+              </a>
             </li>
           </ul>
         </div>

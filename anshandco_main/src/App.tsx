@@ -39,11 +39,13 @@ export default function App() {
   const [viewAllDrawerOpen, setViewAllDrawerOpen] = useState(false);
   const [viewAllTab, setViewAllTab] = useState<'works' | 'clients' | 'news'>('works');
 
-  // Handle initial URL parameters & history state (supports ?page=, ?portfolio=, ?case=, ?news=)
+  // Handle initial URL parameters & history state (supports clean paths + ?page=, ?portfolio=, ?case=, ?news=)
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const portfolioParam = params.get('portfolio') || params.get('member');
-    const pageParam = params.get('page') as PageRoute | null;
+    const cleanPath = window.location.pathname.replace(/^\/+|\/+$/g, '') as PageRoute;
+    const validCleanPages: PageRoute[] = ['what-we-are', 'who-we-are', 'what-we-provide', 'who-trust-us'];
+    const pageParam = (params.get('page') as PageRoute | null) || (validCleanPages.includes(cleanPath) ? cleanPath : null);
     const caseParam = params.get('case');
     const newsParam = params.get('news');
     const queryParam = (params.get('q') || params.get('search') || '').trim().toLowerCase();
