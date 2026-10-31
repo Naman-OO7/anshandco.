@@ -168,46 +168,74 @@ export const Footer: React.FC<FooterProps> = ({
           </ul>
         </div>
 
-        {/* Col 3: ENGAGE */}
+        {/* Col 3: COMPANY, CONTACT & LEGAL */}
         <div className="col-span-1 md:col-span-3 flex flex-col">
           <h4 className="text-[12px] font-medium tracking-[0.25em] uppercase text-neutral-400 mb-6">
-            CONNECT
+            COMPANY &amp; LEGAL
           </h4>
           <ul className="flex flex-col gap-3 text-[14px] font-light text-neutral-300">
             <li>
-              <button
-                onClick={onOpenContact}
-                className="hover:text-[#e38528] transition-colors cursor-pointer text-left"
-              >
-                Start a Conversation
-              </button>
-            </li>
-            <li>
               <a
-                href="/?page=who-trust-us"
+                href="/about"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
-                    handlePageClick('who-trust-us');
+                    handlePageClick('what-we-are');
                   }
                 }}
-                className="hover:text-white transition-colors cursor-pointer text-left"
+                className="hover:text-[#e38528] transition-colors cursor-pointer text-left"
               >
-                Client Partnerships
+                About Us
               </a>
             </li>
             <li>
               <a
-                href="/"
+                href="/contact"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
-                    handlePageClick('home');
+                    onOpenContact();
+                  }
+                }}
+                className="hover:text-[#e38528] transition-colors cursor-pointer text-left"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="/terms"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('terms');
                   }
                 }}
                 className="hover:text-white transition-colors cursor-pointer text-left"
               >
-                Home Experience
+                Terms of Service
+              </a>
+            </li>
+            <li>
+              <a
+                href="/privacy"
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey) {
+                    e.preventDefault();
+                    handlePageClick('privacy');
+                  }
+                }}
+                className="hover:text-white transition-colors cursor-pointer text-left"
+              >
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a
+                href="/llms.txt"
+                className="hover:text-white transition-colors cursor-pointer text-left"
+              >
+                AI &amp; LLM Documentation
               </a>
             </li>
           </ul>
@@ -215,10 +243,19 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Col 4: ANSH&CO Brand Badge */}
         <div className="col-span-1 md:col-span-3 flex flex-col justify-between items-start md:items-end pt-4 md:pt-0">
-          <div className="text-left md:text-right">
-            <span className="text-[28px] md:text-[34px] font-normal tracking-[0.2em] uppercase text-white block">
-              ANSH&amp;CO
-            </span>
+          <div className="text-left md:text-right flex flex-col items-start md:items-end">
+            <div className="flex items-center gap-3">
+              <img
+                src="/logo.png"
+                alt="ANSH&CO Official Logo"
+                width={38}
+                height={38}
+                className="w-9 h-9 rounded-md object-cover border border-neutral-800"
+              />
+              <span className="text-[28px] md:text-[34px] font-normal tracking-[0.2em] uppercase text-white block">
+                ANSH&amp;CO
+              </span>
+            </div>
             <span className="text-[11px] font-mono tracking-widest text-[#e38528] uppercase mt-2 block">
               CREATIVE IDEAS. DIGITAL POSSIBILITIES.
             </span>

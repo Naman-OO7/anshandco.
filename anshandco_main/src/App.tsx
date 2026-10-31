@@ -20,6 +20,8 @@ import { WhoWeArePage } from './pages/WhoWeArePage';
 import { WhatWeProvidePage } from './pages/WhatWeProvidePage';
 import { WhoTrustUsPage } from './pages/WhoTrustUsPage';
 import { MemberPortfolioPage } from './pages/MemberPortfolioPage';
+import { TermsPage, PrivacyPage, ContactPage } from './pages/LegalAndContactPages';
+import { registerAnshWebMCPTools } from './utils/webmcp';
 
 import { ContactModal } from './components/ContactModal';
 import { CaseStudyModal } from './components/CaseStudyModal';
@@ -39,13 +41,27 @@ export default function App() {
   const [viewAllDrawerOpen, setViewAllDrawerOpen] = useState(false);
   const [viewAllTab, setViewAllTab] = useState<'works' | 'clients' | 'news'>('works');
 
+  // Register WebMCP tools on page load for in-browser AI agents
+  useEffect(() => {
+    registerAnshWebMCPTools();
+  }, []);
+
   // Handle initial URL parameters & history state (supports clean paths + ?page=, ?portfolio=, ?case=, ?news=)
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const portfolioParam = params.get('portfolio') || params.get('member');
-    const cleanPath = window.location.pathname.replace(/^\/+|\/+$/g, '') as PageRoute;
-    const validCleanPages: PageRoute[] = ['what-we-are', 'who-we-are', 'what-we-provide', 'who-trust-us'];
-    const pageParam = (params.get('page') as PageRoute | null) || (validCleanPages.includes(cleanPath) ? cleanPath : null);
+    const rawPath = window.location.pathname.replace(/^\/+|\/+$/g, '');
+    const mappedPath: PageRoute | null =
+      rawPath === 'about'
+        ? 'what-we-are'
+        : (['what-we-are', 'who-we-are', 'what-we-provide', 'who-trust-us', 'terms', 'privacy', 'contact'].includes(rawPath)
+            ? (rawPath as PageRoute)
+            : null);
+    const rawPageParam = params.get('page');
+    const pageParam: PageRoute | null =
+      rawPageParam === 'about'
+        ? 'what-we-are'
+        : (rawPageParam as PageRoute | null) || mappedPath;
     const caseParam = params.get('case');
     const newsParam = params.get('news');
     const queryParam = (params.get('q') || params.get('search') || '').trim().toLowerCase();
@@ -684,6 +700,28 @@ export default function App() {
             onOpenContact={handleOpenContact}
             onSelectClient={handleSelectClient}
             onNavigateToWhatWeAre={() => handleNavigatePage('what-we-are')}
+          />
+        )}
+
+        {/* Legal & Contact Pages */}
+        {currentPage === 'terms' && (
+          <TermsPage
+            onNavigatePage={handleNavigatePage}
+            onOpenContact={handleOpenContact}
+          />
+        )}
+
+        {currentPage === 'privacy' && (
+          <PrivacyPage
+            onNavigatePage={handleNavigatePage}
+            onOpenContact={handleOpenContact}
+          />
+        )}
+
+        {currentPage === 'contact' && (
+          <ContactPage
+            onNavigatePage={handleNavigatePage}
+            onOpenContact={handleOpenContact}
           />
         )}
       </main>

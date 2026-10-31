@@ -1,7 +1,45 @@
+# ============================================================================
+# ANSH&CO (https://anshandco.com) — ROBOTS.TXT & AI CONTENT SIGNALS
+# Brand Custodianship, Next.js Web Engineering, AI Workflow Automation & Growth
+# ============================================================================
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
+# Explicit AI Search, Answer Engine (AEO) & Generative Engine (GEO) Crawlers
+User-agent: OAI-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: PerplexityBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: anthropic-ai
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 User-agent: Googlebot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 User-agent: Googlebot-Image
@@ -11,36 +49,20 @@ User-agent: Googlebot-Video
 Allow: /
 
 User-agent: Bingbot
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Applebot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 User-agent: Applebot-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
-User-agent: Meta-ExternalAgent
-Allow: /
-
+# Sitemaps, Syndication Feeds & AI / Agent Discovery Endpoints
 Sitemap: https://anshandco.com/sitemap.xml
+Sitemap: https://anshandco.com/rss.xml
+Sitemap: https://anshandco.com/feed.xml
+# LLMs & Markdown Endpoints:
+# https://anshandco.com/llms.txt
+# https://anshandco.com/llms-full.txt
+# https://anshandco.com/index.md
+# MCP Server Card (SEP-1649):
+# https://anshandco.com/.well-known/mcp/server-card.json

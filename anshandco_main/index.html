@@ -21,9 +21,12 @@
     <link rel="alternate" type="application/atom+xml" title="ANSH&amp;CO — Case Studies &amp; Studio News (Atom WebSub Feed)" href="https://anshandco.com/feed.xml" />
     <link rel="alternate" type="application/rss+xml" title="ANSH&amp;CO — Case Studies &amp; Studio News (RSS 2.0 WebSub Feed)" href="https://anshandco.com/rss.xml" />
 
-    <!-- AI / LLM DISCOVERY LINKS (GEO & AEO) -->
+    <!-- AI / LLM / MCP DISCOVERY LINKS (GEO, AEO & AGENT READINESS) -->
+    <link rel="llms-txt" type="text/plain" href="https://anshandco.com/llms.txt" title="ANSH&CO AI & LLM Summary" />
     <link rel="alternate" type="text/plain" href="https://anshandco.com/llms.txt" title="ANSH&CO AI & LLM Summary" />
     <link rel="alternate" type="text/plain" href="https://anshandco.com/llms-full.txt" title="ANSH&CO Complete AI Knowledge Base" />
+    <link rel="alternate" type="text/markdown" href="https://anshandco.com/index.md" title="ANSH&CO Markdown Representation" />
+    <link rel="mcp-server-card" type="application/json" href="https://anshandco.com/.well-known/mcp/server-card.json" title="ANSH&CO MCP Server Card (SEP-1649)" />
     <link rel="sitemap" type="application/xml" href="https://anshandco.com/sitemap.xml" title="Sitemap" />
 
     <!-- GEO / LOCAL SEO META TAGS (DEHRADUN HEADQUARTERS) -->
@@ -147,15 +150,16 @@
           "logo": {
             "@type": "ImageObject",
             "@id": "https://anshandco.com/#logo",
-            "url": "https://anshandco.com/assets/aistudio/ansh_logo_d7f34171.jpg",
-            "contentUrl": "https://anshandco.com/logo.png",
+            "url": "https://anshandco.com/logo.png",
+            "contentUrl": "https://anshandco.com/ansh_logo.jpg",
             "width": 512,
             "height": 512,
-            "caption": "ANSH&CO"
+            "caption": "ANSH&CO Official Logo"
           },
           "image": [
             "https://anshandco.com/logo.png",
-            "https://anshandco.com/assets/aistudio/ansh_logo_d7f34171.jpg",
+            "https://anshandco.com/ansh_logo.jpg",
+            "https://file.garden/aqpuSRZZW6ZbIllx/ansh_logo.jpg",
             "https://anshandco.com/android-chrome-512x512.png"
           ],
           "email": "contact@anshandco.com",
@@ -684,19 +688,138 @@
     }
     </script>
 
-    <!-- FAVICONS & BRAND IDENTITY ICONS -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="icon" type="image/jpeg" href="/assets/aistudio/ansh_logo_d7f34171.jpg" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- FAVICONS & BRAND IDENTITY ICONS (GOOGLE SEARCH & BROWSER ICONS) -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2026" />
+    <link rel="shortcut icon" href="/favicon.ico?v=2026" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=2026" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=2026" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=2026" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png?v=2026" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2026" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2026" />
+    <link rel="icon" type="image/jpeg" href="/ansh_logo.jpg?v=2026" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2026" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2026" />
+    <link rel="manifest" href="/site.webmanifest?v=2026" />
+
+    <!-- WEBMCP IN-BROWSER AGENT TOOL REGISTRATION ON PAGE LOAD -->
+    <script>
+      (function () {
+        var anshTools = [
+          {
+            name: 'get_agency_overview',
+            description: 'Get ANSH&CO company overview, Dehradun headquarters address, direct leadership phone numbers (+91 76684 22047), awards, and 4 core brand custodianship pillars.',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                includeTeam: { type: 'boolean', description: 'Include the 7 core in-house specialist profiles.' }
+              }
+            },
+            execute: function () {
+              return Promise.resolve({
+                name: 'ANSH&CO',
+                url: 'https://anshandco.com/',
+                headquarters: 'Aman Vihar, Dehradun, Uttarakhand 248001, India',
+                email: 'contact@anshandco.com',
+                phones: ['+91 76684 22047', '+91 91527 62613'],
+                aboutUrl: 'https://anshandco.com/about',
+                contactUrl: 'https://anshandco.com/contact',
+                termsUrl: 'https://anshandco.com/terms',
+                privacyUrl: 'https://anshandco.com/privacy'
+              });
+            }
+          },
+          {
+            name: 'list_agency_services',
+            description: 'List ANSH&CO 15 in-house capabilities across Next.js Web Development, Mobile Apps, Custom CRM/ERP, AI Workflow Automation, Technical SEO/AEO/GEO, Meta & Google Ads, Brand Identity, and Viral Reels.',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                category: { type: 'string', description: 'Service category filter' }
+              }
+            },
+            execute: function () {
+              return Promise.resolve({
+                url: 'https://anshandco.com/?page=what-we-provide',
+                count: 15,
+                services: [
+                  'Web Development (React & Next.js)',
+                  'Mobile App Development (iOS & Android)',
+                  'Custom CRM Engineering',
+                  'ERP Systems & Operational BI',
+                  'AI Workflow Automation',
+                  'Digital Marketing & CRO',
+                  'Technical SEO, AEO & GEO',
+                  'Meta Ads & Google Ads',
+                  'Brand Storytelling & Copywriting',
+                  'Social Media Management',
+                  'Viral Meme Marketing',
+                  'Generative AI Video Creation',
+                  'Brand Identity & Luxury Packaging',
+                  'Content Marketing',
+                  'Cinematic Video Editing, Viral Reels & PR'
+                ]
+              });
+            }
+          },
+          {
+            name: 'submit_project_inquiry',
+            description: 'Submit a business inquiry, project brief, or consultation request to ANSH&CO leadership (contact@anshandco.com).',
+            inputSchema: {
+              type: 'object',
+              required: ['name', 'email', 'message'],
+              properties: {
+                name: { type: 'string', description: 'Client full name' },
+                email: { type: 'string', description: 'Client email address' },
+                phone: { type: 'string', description: 'Client phone or WhatsApp number' },
+                service: { type: 'string', description: 'Primary service needed' },
+                message: { type: 'string', description: 'Project brief and goals' }
+              }
+            },
+            execute: function (args) {
+              return Promise.resolve({
+                status: 'ready',
+                recipient: 'contact@anshandco.com',
+                phone: '+91 76684 22047',
+                submitted: args || {}
+              });
+            }
+          }
+        ];
+
+        function initWebMCP() {
+          try {
+            if (typeof navigator === 'undefined') return;
+            if (!navigator.modelContext) {
+              var reg = [];
+              navigator.modelContext = {
+                tools: reg,
+                registerTool: function (tool) { reg.push(tool); },
+                unregisterTool: function (name) {
+                  reg = reg.filter(function (t) { return t.name !== name; });
+                },
+                provideContext: function (opts) {
+                  if (opts && Array.isArray(opts.tools)) {
+                    opts.tools.forEach(function (t) { reg.push(t); });
+                  }
+                }
+              };
+            }
+            if (typeof navigator.modelContext.registerTool === 'function') {
+              anshTools.forEach(function (tool) {
+                try { navigator.modelContext.registerTool(tool); } catch (e) {}
+              });
+            } else if (typeof navigator.modelContext.provideContext === 'function') {
+              navigator.modelContext.provideContext({ tools: anshTools });
+            }
+          } catch (e) {}
+        }
+
+        initWebMCP();
+        window.addEventListener('DOMContentLoaded', initWebMCP);
+        window.addEventListener('load', initWebMCP);
+      })();
+    </script>
 
     <!-- CORE WEB VITALS RESOURCE HINTS & FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -708,7 +831,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-white text-black antialiased selection:bg-orange-500 selection:text-white">
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static pre-hydration SEO & AI Agent crawlable shell (replaced cleanly by React on mount) -->
+      <header class="sr-only">
+        <a href="https://anshandco.com/">
+          <img src="/logo.png" alt="ANSH&amp;CO Official Brand Logo" width="48" height="48" />
+          ANSH&amp;CO
+        </a>
+        <nav aria-label="Primary Navigation">
+          <a href="https://anshandco.com/">Home</a>
+          <a href="https://anshandco.com/about">About Us</a>
+          <a href="https://anshandco.com/?page=what-we-are">What we are?</a>
+          <a href="https://anshandco.com/?page=who-we-are">Who we are?</a>
+          <a href="https://anshandco.com/?page=what-we-provide">What we provide?</a>
+          <a href="https://anshandco.com/?page=who-trust-us">Who Trust us?</a>
+          <a href="https://anshandco.com/contact">Contact Us</a>
+          <a href="https://anshandco.com/terms">Terms of Service</a>
+          <a href="https://anshandco.com/privacy">Privacy Policy</a>
+        </nav>
+      </header>
+      <main class="sr-only">
+        <h1>ANSH&amp;CO — Brand Custodians, AI Solutions, Next.js Web Engineering &amp; Viral Growth Agency</h1>
+        <p>ANSH&amp;CO is an independent brand custodianship, full-stack web &amp; mobile engineering, AI workflow automation, and performance marketing studio in Aman Vihar, Dehradun, Uttarakhand 248001, India.</p>
+        <form
+          action="mailto:contact@anshandco.com"
+          method="get"
+          toolname="submit_project_inquiry"
+          tooldescription="Submit a business inquiry, project brief, or consultation request to ANSH&CO Brand Custodianship & AI Engineering Studio"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="phone" placeholder="Phone Number" />
+          <textarea name="message" placeholder="Project Brief" required></textarea>
+          <button type="submit">Send Inquiry</button>
+        </form>
+      </main>
+      <footer class="sr-only">
+        <a href="https://anshandco.com/about">About</a>
+        <a href="https://anshandco.com/contact">Contact</a>
+        <a href="https://anshandco.com/terms">Terms of Service</a>
+        <a href="https://anshandco.com/privacy">Privacy Policy</a>
+        <a href="https://anshandco.com/llms.txt">LLMs.txt</a>
+        <a href="https://anshandco.com/index.md">Markdown</a>
+        <a href="https://anshandco.com/.well-known/mcp/server-card.json">MCP Server Card</a>
+      </footer>
+    </div>
     <noscript>
       <main>
         <h1>ANSH&amp;CO — Brand Custodians, AI Solutions, Next.js Web Engineering &amp; Viral Growth Agency</h1>
@@ -728,10 +895,14 @@
           <h2>Explore ANSH&amp;CO Pages</h2>
           <ul>
             <li><a href="https://anshandco.com/">Home — Where it begins?</a></li>
+            <li><a href="https://anshandco.com/about">About Us — Company Overview &amp; Leadership</a></li>
             <li><a href="https://anshandco.com/?page=what-we-are">What we are? — Brand Custodianship &amp; 4 Core Pillars</a></li>
             <li><a href="https://anshandco.com/?page=who-we-are">Who we are? — In-House Engineers, Designers &amp; Strategists</a></li>
             <li><a href="https://anshandco.com/?page=what-we-provide">What we provide? — Next.js Web Dev, AI Workflows &amp; Growth</a></li>
             <li><a href="https://anshandco.com/?page=who-trust-us">Who Trust us? — Enterprise Partners &amp; Case Studies</a></li>
+            <li><a href="https://anshandco.com/contact">Contact Us — Direct Leadership Desk</a></li>
+            <li><a href="https://anshandco.com/terms">Terms of Service — Legal &amp; Engagement Terms</a></li>
+            <li><a href="https://anshandco.com/privacy">Privacy Policy — Data Protection &amp; Confidentiality</a></li>
             <li><a href="https://anshandco.com/?case=showcase-extension-1">High-Speed Next.js Web Engineering Case Study</a></li>
             <li><a href="https://anshandco.com/?case=showcase-extension-2">Viral Meme Marketing &amp; High-Converting Ads Case Study</a></li>
             <li><a href="https://anshandco.com/?case=showcase-extension-3">AI Business Workflow Automation &amp; Custom CRM Case Study</a></li>

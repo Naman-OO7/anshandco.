@@ -3,7 +3,7 @@ import { Menu, X, ArrowUpRight, Sun, Moon } from 'lucide-react';
 import { LinkedInIcon, InstagramIcon, TwitterXIcon } from './Icons';
 import { useTheme } from '../context/ThemeContext';
 
-export type PageRoute = 'home' | 'what-we-are' | 'who-we-are' | 'what-we-provide' | 'who-trust-us';
+export type PageRoute = 'home' | 'what-we-are' | 'who-we-are' | 'what-we-provide' | 'who-trust-us' | 'terms' | 'privacy' | 'contact';
 
 interface NavbarProps {
   currentPage: PageRoute;
@@ -110,16 +110,23 @@ export const Navbar: React.FC<NavbarProps> = ({
       }`}
     >
       <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Brand Wordmark: ANSH&CO */}
+        {/* Brand Wordmark & Official Logo: ANSH&CO */}
         <a
           href="/"
           onClick={(e) => {
             e.preventDefault();
             handleItemClick('home');
           }}
-          className="text-[20px] md:text-[24px] font-normal tracking-[0.25em] uppercase text-black dark:text-white hover:opacity-75 transition-opacity select-none cursor-pointer"
+          className="flex items-center gap-2.5 text-[20px] md:text-[24px] font-normal tracking-[0.25em] uppercase text-black dark:text-white hover:opacity-75 transition-opacity select-none cursor-pointer"
         >
-          ANSH&amp;CO
+          <img
+            src="/logo.png"
+            alt="ANSH&CO Official Brand Logo"
+            width={30}
+            height={30}
+            className="w-7 h-7 md:w-8 md:h-8 rounded-md object-cover shrink-0"
+          />
+          <span>ANSH&amp;CO</span>
         </a>
 
         {/* Desktop Nav Links */}
@@ -165,12 +172,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             )}
           </button>
 
-          <button
-            onClick={onOpenContact}
+          <a
+            href="/contact"
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey) {
+                e.preventDefault();
+                onOpenContact();
+              }
+            }}
             className="px-6 py-2 rounded-full border border-black dark:border-white bg-black dark:bg-white text-white dark:text-black text-[14px] font-light hover:bg-transparent dark:hover:bg-transparent hover:text-black dark:hover:text-white transition-all duration-300 cursor-pointer"
           >
             Contact Us
-          </button>
+          </a>
         </div>
 
         {/* Mobile Header Controls (Theme Toggle & Hamburger on small screens) */}

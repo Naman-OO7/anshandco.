@@ -1,0 +1,24 @@
+/
+  Link: <https://anshandco.com/llms.txt>; rel="llms-txt"; type="text/plain", <https://anshandco.com/llms-full.txt>; rel="alternate"; type="text/plain"; title="ANSH&CO Full Knowledge Base", <https://anshandco.com/index.md>; rel="alternate"; type="text/markdown"; title="ANSH&CO Markdown Representation", <https://anshandco.com/.well-known/mcp/server-card.json>; rel="mcp-server-card"; type="application/json", <https://anshandco.com/sitemap.xml>; rel="sitemap"; type="application/xml"
+  Vary: Accept
+  X-Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+/*
+  Link: <https://anshandco.com/llms.txt>; rel="llms-txt"; type="text/plain", <https://anshandco.com/llms-full.txt>; rel="alternate"; type="text/plain"; title="ANSH&CO Full Knowledge Base", <https://anshandco.com/index.md>; rel="alternate"; type="text/markdown"; title="ANSH&CO Markdown Representation", <https://anshandco.com/.well-known/mcp/server-card.json>; rel="mcp-server-card"; type="application/json", <https://anshandco.com/sitemap.xml>; rel="sitemap"; type="application/xml"
+  X-Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+/index.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/.well-known/mcp/server-card.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *

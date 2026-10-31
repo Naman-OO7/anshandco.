@@ -1,0 +1,161 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card/v1.json",
+  "specVersion": "SEP-1649",
+  "protocolVersion": "2025-03-26",
+  "name": "anshandco",
+  "title": "ANSH&CO — Brand Custodians, AI Solutions & Web Engineering Studio",
+  "version": "1.0.0",
+  "description": "Official MCP Server Card for ANSH&CO (anshandco.com). Provides AI agents and assistants with structured access to ANSH&CO's 15 in-house capabilities (Next.js Web Development, Mobile Apps, Custom CRM/ERP, AI Workflow Automation, Technical SEO/AEO/GEO, Meta & Google Ads, Brand Identity & Luxury Packaging, and Viral Video Production), client case studies, leadership directory, and consultation booking.",
+  "homepage": "https://anshandco.com/",
+  "websiteUrl": "https://anshandco.com/",
+  "documentationUrl": "https://anshandco.com/llms-full.txt",
+  "icon": "https://anshandco.com/logo.png",
+  "endpoint": "https://anshandco.com/.well-known/mcp/server-card.json",
+  "url": "https://anshandco.com/.well-known/mcp/server-card.json",
+  "endpoints": {
+    "http": "https://anshandco.com/.well-known/mcp/server-card.json",
+    "markdown": "https://anshandco.com/index.md",
+    "llms": "https://anshandco.com/llms.txt",
+    "llmsFull": "https://anshandco.com/llms-full.txt"
+  },
+  "remotes": [
+    {
+      "transportType": "streamable-http",
+      "type": "streamable-http",
+      "url": "https://anshandco.com/.well-known/mcp/server-card.json"
+    }
+  ],
+  "provider": {
+    "name": "ANSH&CO Studios & Headquarters",
+    "url": "https://anshandco.com/",
+    "email": "contact@anshandco.com",
+    "telephone": "+91-76684-22047",
+    "address": "Aman Vihar, Dehradun, Uttarakhand 248001, India"
+  },
+  "contact": {
+    "name": "ANSH&CO Leadership",
+    "email": "contact@anshandco.com",
+    "phone": "+91 76684 22047",
+    "url": "https://anshandco.com/contact"
+  },
+  "legal": {
+    "aboutUrl": "https://anshandco.com/about",
+    "contactUrl": "https://anshandco.com/contact",
+    "termsUrl": "https://anshandco.com/terms",
+    "privacyUrl": "https://anshandco.com/privacy"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "get_agency_overview",
+      "description": "Retrieve ANSH&CO company profile, headquarters address, direct leadership phone numbers, awards, and 4 core brand custodianship pillars.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "includeTeam": {
+            "type": "boolean",
+            "description": "Whether to include the 7 core in-house specialist profiles."
+          }
+        }
+      }
+    },
+    {
+      "name": "list_agency_services",
+      "description": "List or filter ANSH&CO's 15 in-house capabilities across Web & Mobile Engineering, Custom CRM/ERP, AI Workflow Automation, SEO/AEO/GEO, Performance Marketing, Brand Identity, and Viral Video Production.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": ["all", "engineering", "ai-automation", "marketing-seo", "branding-design", "video-production"],
+            "description": "Service category filter."
+          }
+        }
+      }
+    },
+    {
+      "name": "get_case_studies",
+      "description": "Fetch ANSH&CO client case studies, enterprise partnerships (Kanpeki, The Coffee Bean & Tea Leaf, Warner Bros. Discovery, SwitzerlandIndia80), and verified ROI metrics.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Optional keyword or client name to filter case studies."
+          }
+        }
+      }
+    },
+    {
+      "name": "submit_project_inquiry",
+      "description": "Prepare and submit a project consultation or business inquiry to ANSH&CO leadership (contact@anshandco.com).",
+      "inputSchema": {
+        "type": "object",
+        "required": ["name", "email", "message"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Client full name."
+          },
+          "email": {
+            "type": "string",
+            "description": "Client business email address."
+          },
+          "phone": {
+            "type": "string",
+            "description": "Client phone or WhatsApp number."
+          },
+          "company": {
+            "type": "string",
+            "description": "Client company or brand name."
+          },
+          "service": {
+            "type": "string",
+            "description": "Primary service of interest (e.g. Next.js Web Development, AI Workflow Automation, Branding & Visual Identity)."
+          },
+          "message": {
+            "type": "string",
+            "description": "Project brief, goals, and timeline."
+          }
+        }
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "https://anshandco.com/llms.txt",
+      "name": "ANSH&CO LLM Summary",
+      "description": "Concise AI-ready overview of ANSH&CO services, team, and contact info.",
+      "mimeType": "text/plain"
+    },
+    {
+      "uri": "https://anshandco.com/llms-full.txt",
+      "name": "ANSH&CO Full Knowledge Base",
+      "description": "Comprehensive documentation of ANSH&CO methodologies, 15 capabilities, case studies, and FAQs.",
+      "mimeType": "text/plain"
+    },
+    {
+      "uri": "https://anshandco.com/index.md",
+      "name": "ANSH&CO Homepage Markdown",
+      "description": "Token-efficient Markdown representation of the ANSH&CO homepage.",
+      "mimeType": "text/markdown"
+    },
+    {
+      "uri": "https://anshandco.com/sitemap.xml",
+      "name": "XML Sitemap",
+      "description": "Complete URL and video sitemap for anshandco.com.",
+      "mimeType": "application/xml"
+    }
+  ]
+}

@@ -1,5 +1,94 @@
 {
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://anshandco.com/llms.txt>; rel=\"llms-txt\"; type=\"text/plain\", <https://anshandco.com/llms-full.txt>; rel=\"alternate\"; type=\"text/plain\"; title=\"ANSH&CO Full Knowledge Base\", <https://anshandco.com/index.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"ANSH&CO Markdown Representation\", <https://anshandco.com/.well-known/mcp/server-card.json>; rel=\"mcp-server-card\"; type=\"application/json\", <https://anshandco.com/sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+        },
+        {
+          "key": "Vary",
+          "value": "Accept"
+        },
+        {
+          "key": "X-Content-Signal",
+          "value": "search=yes, ai-input=yes, ai-train=no"
+        }
+      ]
+    },
+    {
+      "source": "/index.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/llms-full.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/mcp/server-card.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ],
+      "destination": "/index.md"
+    },
+    {
+      "source": "/.well-known/mcp/server-card.json",
+      "destination": "/.well-known/mcp/server-card.json"
+    },
+    {
+      "source": "/((?!\\.well-known/|index\\.md|llms\\.txt|llms-full\\.txt|robots\\.txt|sitemap\\.xml|feed\\.xml|rss\\.xml|site\\.webmanifest|favicon|android-chrome|apple-touch-icon|logo\\.png|ansh_logo\\.jpg|ansh-logo\\.jpg|about|contact|terms|privacy).*)",
+      "destination": "/index.html"
+    }
   ]
 }

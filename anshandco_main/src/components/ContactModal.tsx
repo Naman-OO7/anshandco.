@@ -72,7 +72,12 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+            <form
+              onSubmit={handleSubmit}
+              toolname="submit_project_inquiry"
+              tooldescription="Submit a business inquiry, project brief, or consultation request to ANSH&CO Brand Custodianship & AI Engineering Studio"
+              className="flex flex-col gap-5"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-[11px] uppercase tracking-wider text-neutral-500 dark:text-neutral-400 mb-1">
@@ -80,6 +85,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   </label>
                   <input
                     type="text"
+                    name="name"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -93,6 +99,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -109,6 +116,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   </label>
                   <input
                     type="tel"
+                    name="phone"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="+91 ..."
@@ -121,6 +129,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   </label>
                   <input
                     type="text"
+                    name="company"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                     placeholder="Acme Brands"
@@ -134,6 +143,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   Primary Service
                 </label>
                 <select
+                  name="service"
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   className="w-full px-3 py-2.5 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#1a1a1a] text-black dark:text-white focus:border-black dark:focus:border-white outline-none text-[14px] cursor-pointer transition-colors"
@@ -151,6 +161,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   Project Brief & Objectives *
                 </label>
                 <textarea
+                  name="message"
                   required
                   rows={4}
                   value={formData.message}

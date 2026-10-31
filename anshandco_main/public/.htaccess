@@ -1,0 +1,55 @@
+# ============================================================================
+# ANSH&CO (anshandco.com) — Apache / LiteSpeed (Hostinger) Configuration
+# Supports:
+# 1. RFC 8288 Link Response Headers for AI Agents & Crawlers
+# 2. Content Negotiation: Serve Markdown (text/markdown) when Accept: text/markdown
+# 3. SEP-1649 MCP Server Card at /.well-known/mcp/server-card.json
+# 4. SPA Clean URL Routing (/about, /contact, /terms, /privacy)
+# ============================================================================
+
+<IfModule mod_mime.c>
+  AddType text/markdown .md
+  AddCharset UTF-8 .md .txt .json .xml
+  AddType application/json .json
+  AddType application/manifest+json .webmanifest
+  AddType image/x-icon .ico
+  AddType image/svg+xml .svg
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Advertise AI / Agent discovery resources via RFC 8288 Link Header
+  Header set Link "<https://anshandco.com/llms.txt>; rel=\"llms-txt\"; type=\"text/plain\", <https://anshandco.com/llms-full.txt>; rel=\"alternate\"; type=\"text/plain\"; title=\"ANSH&CO Full Knowledge Base\", <https://anshandco.com/index.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"ANSH&CO Markdown Representation\", <https://anshandco.com/.well-known/mcp/server-card.json>; rel=\"mcp-server-card\"; type=\"application/json\", <https://anshandco.com/sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+  Header merge Vary "Accept"
+  Header set X-Content-Signal "search=yes, ai-input=yes, ai-train=no"
+  Header set Access-Control-Allow-Origin "*"
+
+  <FilesMatch "\.(md)$">
+    Header set Content-Type "text/markdown; charset=utf-8"
+  </FilesMatch>
+
+  <FilesMatch "server-card\.json$">
+    Header set Content-Type "application/json; charset=utf-8"
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Serve Markdown representation when an AI agent requests Accept: text/markdown on Homepage
+  RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+  RewriteCond %{REQUEST_URI} ^/(index\.html)?$ [NC]
+  RewriteRule ^.*$ /index.md [L,T=text/markdown;charset=UTF-8]
+
+  # 2. Allow direct access to .well-known files (including /.well-known/mcp/server-card.json)
+  RewriteRule ^\.well-known/ - [L]
+
+  # 3. Allow existing files and directories (including /about, /contact, /terms, /privacy, /index.md, /llms.txt)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 4. SPA Fallback to index.html
+  RewriteRule ^ /index.html [L]
+</IfModule>
