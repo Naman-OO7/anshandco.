@@ -90,6 +90,13 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
             onMouseLeave={() => setHoveredService(null)}
             className="flex items-center gap-6 cursor-pointer group transition-all duration-300 transform hover:translate-x-3 hover:scale-[1.01]"
           >
+            <img
+              src="/assets/aistudio/ansh_logo_d7f34171.jpg"
+              alt="ANSH&CO Brand Custodianship Strategy and AI Market Positioning"
+              loading="lazy"
+              decoding="async"
+              className="sr-only"
+            />
             <h2
               className={`text-[46px] sm:text-[68px] md:text-[88px] lg:text-[108px] font-extralight tracking-tight uppercase leading-[0.95] transition-colors duration-300 ${
                 hoveredService === 'strategy' ? 'text-black dark:text-white' : 'text-[#ededed] dark:text-[#222222]'
@@ -108,6 +115,13 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
             onMouseLeave={() => setHoveredService(null)}
             className="flex items-center gap-6 cursor-pointer group transition-all duration-300 transform hover:translate-x-3 hover:scale-[1.01]"
           >
+            <img
+              src="/m1.jpg"
+              alt="ANSH&CO Brand Identity Design, Packaging Architecture, and Brand Custodianship"
+              loading="lazy"
+              decoding="async"
+              className="sr-only"
+            />
             <h2
               className={`text-[46px] sm:text-[68px] md:text-[88px] lg:text-[108px] font-extralight tracking-tight uppercase leading-[0.95] transition-colors duration-300 ${
                 hoveredService === 'branding' ? 'text-black dark:text-white' : 'text-[#ededed] dark:text-[#222222]'
@@ -128,6 +142,13 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               onMouseLeave={() => setHoveredService(null)}
               className="flex items-center gap-4 cursor-pointer group transition-all duration-300 transform hover:translate-x-2 hover:scale-[1.01]"
             >
+              <img
+                src="/m2.jpg"
+                alt="ANSH&CO Digital Product Design, AI Automation Systems, and Brand Custodianship"
+                loading="lazy"
+                decoding="async"
+                className="sr-only"
+              />
               <div className="text-neutral-400 dark:text-neutral-600 group-hover:text-black dark:group-hover:text-white transition-colors">
                 <ServiceDigitalBadge className="w-8 h-8 sm:w-10 sm:h-10" />
               </div>
@@ -146,6 +167,13 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
               onMouseLeave={() => setHoveredService(null)}
               className="flex items-center gap-4 cursor-pointer group transition-all duration-300 transform hover:translate-x-2 hover:scale-[1.01]"
             >
+              <img
+                src="/meme1.jpg"
+                alt="ANSH&CO Performance Marketing, SEO, Meta Ads, and AI Growth Services"
+                loading="lazy"
+                decoding="async"
+                className="sr-only"
+              />
               <div className="text-neutral-400 dark:text-neutral-600 group-hover:text-[#e38528] transition-colors">
                 <ServiceMarketingBadge className="w-7 h-7 sm:w-9 sm:h-9" />
               </div>
@@ -165,6 +193,13 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
             onMouseLeave={() => setHoveredService(null)}
             className="flex items-center gap-6 cursor-pointer group transition-all duration-300 transform hover:translate-x-3 hover:scale-[1.01]"
           >
+            <img
+              src="/m3.jpg"
+              alt="ANSH&CO Full-Stack Next.js Web Development, Mobile Apps, and Custom AI CRM/ERP Engineering"
+              loading="lazy"
+              decoding="async"
+              className="sr-only"
+            />
             <h2
               className={`text-[46px] sm:text-[68px] md:text-[88px] lg:text-[108px] font-extralight tracking-tight uppercase leading-[0.95] transition-colors duration-300 ${
                 hoveredService === 'development' ? 'text-black dark:text-white' : 'text-[#ededed] dark:text-[#222222]'
@@ -183,6 +218,13 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({ onKnow
             onMouseLeave={() => setHoveredService(null)}
             className="flex items-center gap-6 cursor-pointer group transition-all duration-300 transform hover:translate-x-3 hover:scale-[1.01]"
           >
+            <img
+              src="/meme2.jpg"
+              alt="ANSH&CO Cinematic Video Editing, AI Video Generation, and Viral Reels Production"
+              loading="lazy"
+              decoding="async"
+              className="sr-only"
+            />
             <h2
               className={`text-[46px] sm:text-[68px] md:text-[88px] lg:text-[108px] font-extralight tracking-tight uppercase leading-[0.95] transition-colors duration-300 ${
                 hoveredService === 'production' ? 'text-black dark:text-white' : 'text-[#ededed] dark:text-[#222222]'

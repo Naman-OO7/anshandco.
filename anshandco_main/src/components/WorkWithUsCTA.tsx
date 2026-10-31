@@ -28,7 +28,7 @@ export const WorkWithUsCTA: React.FC<WorkWithUsCTAProps> = ({ onOpenContact }) =
         ) : (
           <img
             src="/main_video-poster.jpg"
-            alt="ANSH&CO. Contact"
+            alt="Partner with ANSH&CO for long-term brand custodianship, AI workflow automation, and full-stack digital growth"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover filter brightness-60"
           />

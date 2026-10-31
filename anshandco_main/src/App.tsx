@@ -27,7 +27,8 @@ import { NewsModal } from './components/NewsModal';
 import { ViewAllDrawer } from './components/ViewAllDrawer';
 
 import { CaseStudy, NewsUpdate, ClientPartner } from './types';
-import { CASE_STUDIES } from './data/content';
+import { CASE_STUDIES, NEWS_UPDATES } from './data/content';
+import { TEAM_MEMBERS } from './data/team';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageRoute>('home');
@@ -38,12 +39,15 @@ export default function App() {
   const [viewAllDrawerOpen, setViewAllDrawerOpen] = useState(false);
   const [viewAllTab, setViewAllTab] = useState<'works' | 'clients' | 'news'>('works');
 
-  // Handle initial URL parameters & history state
+  // Handle initial URL parameters & history state (supports ?page=, ?portfolio=, ?case=, ?news=)
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const portfolioParam = params.get('portfolio') || params.get('member');
     const pageParam = params.get('page') as PageRoute | null;
-    const initialPage: PageRoute = portfolioParam ? 'who-we-are' : (pageParam || 'home');
+    const caseParam = params.get('case');
+    const newsParam = params.get('news');
+    const queryParam = (params.get('q') || params.get('search') || '').trim().toLowerCase();
+    let initialPage: PageRoute = portfolioParam ? 'who-we-are' : (pageParam || 'home');
     
     if (portfolioParam) {
       setSelectedMemberId(portfolioParam);
@@ -52,14 +56,238 @@ export default function App() {
       setCurrentPage(pageParam);
     }
 
+    if (caseParam) {
+      const foundCase = CASE_STUDIES.find((c) => c.id === caseParam);
+      if (foundCase) setSelectedCaseStudy(foundCase);
+    } else if (newsParam) {
+      const foundNews = NEWS_UPDATES.find((n) => n.id === newsParam);
+      if (foundNews) setSelectedNews(foundNews);
+    } else if (queryParam && !portfolioParam && !pageParam) {
+      const matchedMember = TEAM_MEMBERS.find(
+        (m) =>
+          m.name.toLowerCase().includes(queryParam) ||
+          m.role.toLowerCase().includes(queryParam) ||
+          m.id.toLowerCase() === queryParam
+      );
+      const matchedCase = CASE_STUDIES.find(
+        (c) =>
+          c.title.toLowerCase().includes(queryParam) ||
+          c.client.toLowerCase().includes(queryParam) ||
+          c.summary.toLowerCase().includes(queryParam) ||
+          c.tags.some((t) => t.toLowerCase().includes(queryParam))
+      );
+      const matchedNews = NEWS_UPDATES.find(
+        (n) =>
+          n.title.toLowerCase().includes(queryParam) ||
+          n.summary.toLowerCase().includes(queryParam)
+      );
+
+      if (matchedMember) {
+        setSelectedMemberId(matchedMember.id);
+        setCurrentPage('who-we-are');
+        initialPage = 'who-we-are';
+      } else if (matchedCase) {
+        setSelectedCaseStudy(matchedCase);
+      } else if (matchedNews) {
+        setSelectedNews(matchedNews);
+      } else if (
+        queryParam.includes('service') ||
+        queryParam.includes('provide') ||
+        queryParam.includes('price') ||
+        queryParam.includes('pricing')
+      ) {
+        setCurrentPage('what-we-provide');
+        initialPage = 'what-we-provide';
+      } else if (
+        queryParam.includes('team') ||
+        queryParam.includes('who we are') ||
+        queryParam.includes('founder')
+      ) {
+        setCurrentPage('who-we-are');
+        initialPage = 'who-we-are';
+      } else if (
+        queryParam.includes('client') ||
+        queryParam.includes('trust') ||
+        queryParam.includes('partner')
+      ) {
+        setCurrentPage('who-trust-us');
+        initialPage = 'who-trust-us';
+      } else if (queryParam.includes('what we are') || queryParam.includes('about')) {
+        setCurrentPage('what-we-are');
+        initialPage = 'what-we-are';
+      } else {
+        setViewAllDrawerOpen(true);
+      }
+    }
+
     if (!window.history.state) {
       window.history.replaceState(
-        { page: initialPage, memberId: portfolioParam || null, modal: null },
+        {
+          page: initialPage,
+          memberId: portfolioParam || null,
+          modal: caseParam ? 'case-study' : newsParam ? 'news' : null
+        },
         '',
         window.location.href
       );
     }
   }, []);
+
+  // Dynamically sync SEO title, meta description, OpenGraph, canonical URL, and BreadcrumbList per route/case study/portfolio
+  useEffect(() => {
+    let title = 'ANSH&CO | AI Solutions, Branding, Web Engineering & Growth Agency';
+    let description =
+      'ANSH&CO is an in-house Brand Custodian, Next.js Web Engineering, AI Workflow Automation & Viral Marketing Studio in Dehradun serving global brands. Call +91 76684 22047.';
+    let canonicalUrl = 'https://anshandco.com/';
+
+    if (selectedCaseStudy) {
+      title = `${selectedCaseStudy.title} — ${selectedCaseStudy.client} Case Study | ANSH&CO`;
+      description = `${selectedCaseStudy.summary} Delivered by ANSH&CO Brand Custodianship & AI Engineering Studio.`;
+      canonicalUrl = `https://anshandco.com/?case=${selectedCaseStudy.id}`;
+    } else if (selectedNews) {
+      title = `${selectedNews.title} — ${selectedNews.category} | ANSH&CO`;
+      description = selectedNews.summary;
+      canonicalUrl = `https://anshandco.com/?news=${selectedNews.id}`;
+    } else if (selectedMemberId) {
+      const member = TEAM_MEMBERS.find(
+        (m) =>
+          m.id === selectedMemberId ||
+          m.name.toLowerCase() === selectedMemberId.toLowerCase()
+      );
+      if (member) {
+        title = `${member.name} — ${member.role} | ANSH&CO`;
+        description = `${member.name} (${member.role}) at ANSH&CO: ${member.tagline}`;
+        canonicalUrl = `https://anshandco.com/?portfolio=${member.id}`;
+      }
+    } else if (currentPage === 'what-we-are') {
+      title = 'What We Are? | Brand Custodian & AI Engineering Studio — ANSH&CO';
+      description =
+        'Discover ANSH&CO’s 4 core pillars: Strategic Rigor, Visual Architecture, Bespoke Code & AI, and Long-Term Brand Custodianship in Dehradun, India.';
+      canonicalUrl = 'https://anshandco.com/?page=what-we-are';
+    } else if (currentPage === 'who-we-are') {
+      title = 'Who We Are? | Multidisciplinary Engineers, Designers & Strategists — ANSH&CO';
+      description =
+        'Meet the 100% in-house collective of full-stack engineers, AI architects, brand strategists, and master video editors at ANSH&CO Studios in Dehradun.';
+      canonicalUrl = 'https://anshandco.com/?page=who-we-are';
+    } else if (currentPage === 'what-we-provide') {
+      title = 'What We Provide? | Next.js Web Dev, AI Automation, Branding & SEO — ANSH&CO';
+      description =
+        'Explore ANSH&CO capabilities: Custom React & Next.js Web Engineering, AI Workflow & CRM Automation, Brand Identity, Technical SEO, and Viral Reel Production.';
+      canonicalUrl = 'https://anshandco.com/?page=what-we-provide';
+    } else if (currentPage === 'who-trust-us') {
+      title = 'Who Trust Us? | Enterprise Partners & Client Case Studies — ANSH&CO';
+      description =
+        'Trusted by global leaders including Warner Bros. Discovery, The Coffee Bean & Tea Leaf, Kanpeki, Bharatiyam Beverages, T&T Group, and Disha Publication.';
+      canonicalUrl = 'https://anshandco.com/?page=who-trust-us';
+    }
+
+    document.title = title;
+
+    const setMeta = (selector: string, content: string) => {
+      const el = document.querySelector(selector);
+      if (el) el.setAttribute('content', content);
+    };
+
+    setMeta('meta[name="description"]', description);
+    setMeta('meta[property="og:title"]', title);
+    setMeta('meta[property="og:description"]', description);
+    setMeta('meta[property="og:url"]', canonicalUrl);
+    setMeta('meta[name="twitter:title"]', title);
+    setMeta('meta[name="twitter:description"]', description);
+
+    const canonicalEl = document.querySelector('link[rel="canonical"]');
+    if (canonicalEl) canonicalEl.setAttribute('href', canonicalUrl);
+
+    const selfLinkEl = document.querySelector('link[rel="self"]');
+    if (selfLinkEl) selfLinkEl.setAttribute('href', canonicalUrl);
+
+    // Dynamically update hierarchical BreadcrumbList JSON-LD for the active route
+    const breadcrumbItems: Array<{
+      '@type': 'ListItem';
+      position: number;
+      name: string;
+      item: string;
+    }> = [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'ANSH&CO — Where it begins?',
+        item: 'https://anshandco.com/'
+      }
+    ];
+
+    if (selectedCaseStudy) {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: `${selectedCaseStudy.title} — Case Study`,
+        item: `https://anshandco.com/?case=${selectedCaseStudy.id}`
+      });
+    } else if (selectedMemberId) {
+      const member = TEAM_MEMBERS.find(
+        (m) =>
+          m.id === selectedMemberId ||
+          m.name.toLowerCase() === selectedMemberId.toLowerCase()
+      );
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Who we are?',
+        item: 'https://anshandco.com/?page=who-we-are'
+      });
+      if (member) {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          position: 3,
+          name: `${member.name} — ${member.role}`,
+          item: `https://anshandco.com/?portfolio=${member.id}`
+        });
+      }
+    } else if (currentPage === 'what-we-are') {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: 'What we are?',
+        item: 'https://anshandco.com/?page=what-we-are'
+      });
+    } else if (currentPage === 'who-we-are') {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Who we are?',
+        item: 'https://anshandco.com/?page=who-we-are'
+      });
+    } else if (currentPage === 'what-we-provide') {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: 'What we provide?',
+        item: 'https://anshandco.com/?page=what-we-provide'
+      });
+    } else if (currentPage === 'who-trust-us') {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Who trust us?',
+        item: 'https://anshandco.com/?page=who-trust-us'
+      });
+    }
+
+    let dynamicBreadcrumbEl = document.getElementById(
+      'dynamic-breadcrumb-jsonld'
+    ) as HTMLScriptElement | null;
+    if (!dynamicBreadcrumbEl) {
+      dynamicBreadcrumbEl = document.createElement('script');
+      dynamicBreadcrumbEl.id = 'dynamic-breadcrumb-jsonld';
+      dynamicBreadcrumbEl.type = 'application/ld+json';
+      document.head.appendChild(dynamicBreadcrumbEl);
+    }
+    dynamicBreadcrumbEl.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbItems
+    });
+  }, [currentPage, selectedMemberId, selectedCaseStudy, selectedNews]);
 
   // Listen to browser popstate (phone back / cancel button & browser back/forward)
   useEffect(() => {
@@ -365,6 +593,9 @@ export default function App() {
       <main className="w-full flex flex-col">
         {currentPage === 'home' && (
           <>
+            <h1 className="sr-only">
+              ANSH&amp;CO — In-House Brand Custodianship, Next.js Web Engineering, AI Workflow Automation &amp; Growth Studio
+            </h1>
             {/* Section 2: Hero Video & Custom Cursor Area (Initial Mount Hero Entrance) */}
             <div id="hero-section">
               <HeroVideo />

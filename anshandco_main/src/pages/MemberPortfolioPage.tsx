@@ -126,7 +126,7 @@ export const MemberPortfolioPage: React.FC<MemberPortfolioPageProps> = ({
             >
               <img
                 src={displayAvatar}
-                alt={member.name}
+                alt={`${member.name} — ${member.role} & ${member.creativeRole} specializing in brand custodianship and AI services at ANSH&CO`}
                 referrerPolicy="no-referrer"
                 onError={(e) => {
                   const map: Record<string, string> = {
@@ -287,7 +287,7 @@ export const MemberPortfolioPage: React.FC<MemberPortfolioPageProps> = ({
                   >
                     <img
                       src={work.mediaUrl}
-                      alt={work.title}
+                      alt={`${work.title} — ${work.category} system engineered by ${member.name} for ANSH&CO brand custodianship and AI services`}
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover grayscale contrast-105 transition-all duration-700 ease-in-out group-hover:grayscale-0 group-hover:scale-105"
                     />
@@ -435,7 +435,7 @@ export const MemberPortfolioPage: React.FC<MemberPortfolioPageProps> = ({
           >
             <img
               src={lightboxItem.url}
-              alt={lightboxItem.title}
+              alt={`${lightboxItem.title}${lightboxItem.subtitle ? ` — ${lightboxItem.subtitle}` : ''} | ANSH&CO brand custodianship and AI services portfolio`}
               className="max-h-[88vh] max-w-[90vw] w-auto h-auto object-contain mx-auto shadow-2xl block select-none rounded-none"
             />
           </div>

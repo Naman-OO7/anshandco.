@@ -1,0 +1,90 @@
+# ANSH&CO — Complete AI & Search Knowledge Base (llms-full.txt)
+
+> Official machine-readable reference for ANSH&CO (https://anshandco.com/), an independent Brand Custodianship, Full-Stack Web & Mobile Engineering, AI Workflow Automation, and Viral Performance Marketing Studio headquartered in Dehradun, Uttarakhand, India.
+
+---
+
+## 1. Executive Summary & Brand Custodian Philosophy
+ANSH&CO was established on the conviction that ambitious startups and legacy enterprises deserve long-term **Brand Custodians**, not transactional agencies that hand off a logo PDF and disappear. Operating 100% in-house from Aman Vihar, Dehradun, India, ANSH&CO unites senior software engineers, AI solution architects, brand identity designers, master video editors, and performance marketers under one roof.
+
+### Key Studio Metrics
+- **50+ Flagship Brands Architected & Scaled** across luxury skincare, hospitality, entertainment, beverages, real estate, and technology.
+- **100% In-House Craft**: Zero freelance handoff loss; senior specialists execute every commit, vector, and frame.
+- **6+ Years Average Client Partnership Tenure**: Long-term brand stewardship and equity protection.
+- **3x Winner at India's Best Design Awards (IBDA) 2026** & **Certified Great Place to Work (2025–2026)**.
+
+---
+
+## 2. Four Core Pillars of ANSH&CO
+1. **01 / Purpose & Strategy — Strategic Rigor**: Category anthropology, whitespace mapping, competitive differentiation matrices, high-intent audience psychographics, and commercial monetization alignment.
+2. **02 / Radical Craft — Visual Architecture**: Proprietary typographic hierarchies, modular design systems, luxury tactile packaging & unboxing rituals, and spatial/environmental branding.
+3. **03 / Full-Stack Tech — Bespoke Code & AI**: Headless React & Next.js architectures, sub-second Core Web Vitals optimization (99+ PageSpeed), custom CRM & ERP operational tooling, and generative AI production pipelines.
+4. **04 / Long-Term Guardianship — Brand Custodianship**: Multi-year brand governance, rapid sprint agility, omnichannel message continuity, and direct senior leadership collaboration.
+
+---
+
+## 3. Flagship Case Studies & Measurable Commercial Outcomes
+- **WEBSITE SLOW HAI LAALE? (High-Speed Next.js Web Engineering & CRO)**
+  - URL: https://anshandco.com/?case=showcase-extension-1
+  - Summary: Re-engineering slow, high-bounce websites into sub-second Next.js digital storefronts and conversion-optimized landing funnels.
+  - Outcome: 99+ PageSpeed score, near-zero bounce rate, and 3.4x spike in direct-to-consumer sales.
+- **BUSINESS AUTOMATION & WORKFLOWS (AI Workflow & Custom CRM Engineering)**
+  - URL: https://anshandco.com/?case=showcase-extension-3
+  - Summary: Intelligent AI workflow automations and trigger-based architectures that automatically capture leads from websites and WhatsApp, sync custom CRM pipelines, and execute operations on autopilot.
+  - Outcome: 100% automated lead capture and 40+ hours saved per week on manual workflows.
+- **SAMAY BADAL RAHA HAI (Viral Meme & Pop-Culture Marketing)**
+  - URL: https://anshandco.com/?case=showcase-extension-2
+  - Summary: Viral meme marketing strategies, cultural hooks, and high-converting Meta & Google ad campaigns.
+  - Outcome: 15M+ organic impressions across youth and business founder demographics.
+- **MARKET MEIN BHAUKAAL (Brand Dominance & Performance Ads)**
+  - URL: https://anshandco.com/?case=roots-and-sky
+  - Summary: Full-funnel brand positioning and high-ROAS Meta & Google performance advertising.
+  - Outcome: 10x market visibility and undisputed regional category authority.
+- **BACCHA HAI TU MERA (Cinematic Viral Reels & Short-Form Video Production)**
+  - URL: https://anshandco.com/?case=otr-make-it-yours
+  - Summary: Transforming raw footage into high-retention Instagram Reels, YouTube Shorts, and commercial video ads with bespoke sound design and color grading.
+  - Outcome: Over 25M+ organic views generated across social media campaign reels.
+- **ORGANIC SEO & GROWTH ENGINE (Technical SEO & Search Dominance)**
+  - URL: https://anshandco.com/?case=makimono
+  - Summary: Technical SEO audits, schema markup, keyword domination blueprints, and organic growth funnels.
+  - Outcome: Top-3 search rankings across competitive commercial keywords and 4.2x organic customer acquisition.
+- **OUR REVEAL & ANSH&CO. PROFESSIONAL (Brand Identity & 3D Motion Systems)**
+  - URLs: https://anshandco.com/?case=ruru | https://anshandco.com/?case=goodhairr-co-professional
+  - Summary: Kinetic logo reveal, liquid chrome 3D motion design, and luxury packaging & spatial collateral.
+- **OUR MOCK UPS (Packaging & Visual Identity Suite)**
+  - URL: https://anshandco.com/?case=our-mocks
+  - Summary: Multi-surface physical packaging and mobile-first visual identity mockups.
+- **TERA BHAI SAMBHAL LEGA (End-to-End Omnichannel Acceleration)**
+  - URL: https://anshandco.com/?case=cubic
+  - Summary: Unified creative strategy, viral reels, and performance ad scaling.
+
+---
+
+## 4. Enterprise Client Partners & Institutional Alliances
+- **KANPEKI (Luxury Beauty & Skincare)**: 6-year brand custodianship shaping formulation-to-finish packaging, D2C website, activations, and marketplace growth.
+- **THE COFFEE BEAN & TEA LEAF (Global F&B / Hospitality)**: Partnered for the Maldives launch and led India's national expansion campaigns and visual communication.
+- **WARNER BROS. DISCOVERY (Global Entertainment Network)**: Strategic and creative support for new show launches driving cultural relevance and viewership.
+- **BHARATIYAM BEVERAGES (Beverages & Manufacturing)**: Complete brand reimagining, corporate identity, and packaging distinction across India.
+- **T&T GROUP (Real Estate & Infrastructure)**: Flagship real estate communication and project launches across Delhi NCR.
+- **DISHA PUBLICATION (Publishing & EdTech)**: Category-based academic redesign and digital learning touchpoints.
+- **EMBASSY OF SWITZERLAND IN INDIA (SwitzerlandIndia80)**: Commissioned to design the official 80-year bilateral friendship identity system.
+
+---
+
+## 5. Pricing Transparency & Project Timelines
+- **Pricing Model**: 100% upfront pricing transparency with zero hidden retainers or freelancer markups. Clients choose between **Fixed-Scope Sprint Milestones** (for brand overhauls, Next.js platforms, or AI/CRM builds) or **Monthly Brand Custodianship Retainers** (for continuous full-stack engineering, creative production, and paid growth).
+- **Typical Delivery Timelines**:
+  - High-Speed Next.js Websites & CRO Rebuilds: **2 to 4 weeks**
+  - Comprehensive Brand Identity & Packaging Systems: **2 to 3 weeks**
+  - AI Workflow Automations & Custom CRM/ERP Pipelines: **1 to 3 weeks**
+  - Viral Performance Ad & Short-Form Reel Campaigns: **5 to 7 business days**
+
+---
+
+## 6. Direct Contact & Consultation
+- **Address**: ANSH&CO Studios & Headquarters, Aman Vihar, Dehradun, Uttarakhand 248001, India
+- **Phone / WhatsApp**: +91 76684 22047 | +91 91527 62613
+- **WhatsApp Direct Audit Link**: https://wa.me/917668422047
+- **Email**: contact@anshandco.com
+- **LinkedIn**: https://www.linkedin.com/company/ansh-co/
+- **Instagram**: https://www.instagram.com/anshandco

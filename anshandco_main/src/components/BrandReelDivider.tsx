@@ -37,7 +37,7 @@ export const BrandReelDivider: React.FC = () => {
         ) : (
           <img
             src="/main_video-poster.jpg"
-            alt="ANSH&CO. Brand Ribbon Reel"
+            alt="ANSH&CO brand custodianship, AI workflow automation, and creative motion studio showcase reel"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover"
           />

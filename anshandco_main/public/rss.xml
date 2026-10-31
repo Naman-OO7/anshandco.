@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ANSH&amp;CO — Brand Custodians &amp; Digital Architects | Case Studies &amp; News</title>
+    <link>https://anshandco.com/</link>
+    <description>Official WebSub / RSS 2.0 feed for ANSH&amp;CO (Ansh and Co.) featuring new case studies, AI workflow automation deployments, full-stack web performance sprints, and studio news.</description>
+    <language>en-in</language>
+    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+    <atom:link href="https://anshandco.com/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://anshandco.com/assets/aistudio/ansh_logo_d7f34171.jpg</url>
+      <title>ANSH&amp;CO — Brand Custodians &amp; Digital Architects</title>
+      <link>https://anshandco.com/</link>
+    </image>
+
+    <item>
+      <title>ANSH&amp;CO Bags 34 Metals at India's Best Design Awards 2026</title>
+      <link>https://anshandco.com/?news=ibda-2026</link>
+      <guid isPermaLink="true">https://anshandco.com/?news=ibda-2026</guid>
+      <pubDate>Sun, 15 Mar 2026 09:00:00 GMT</pubDate>
+      <category>Awards &amp; Recognition</category>
+      <description>In an unprecedented sweep at the 11th edition of India's Best Design Awards (IBDA), ANSH&amp;CO was honored with 34 metals across brand identity, packaging architecture, and digital product design.</description>
+    </item>
+
+    <item>
+      <title>Embassy of Switzerland Unveils the Official '80 Years of Friendship' Identity by ANSH&amp;CO</title>
+      <link>https://anshandco.com/?news=switzerland-india-80</link>
+      <guid isPermaLink="true">https://anshandco.com/?news=switzerland-india-80</guid>
+      <pubDate>Fri, 20 Feb 2026 09:00:00 GMT</pubDate>
+      <category>Diplomatic Identity</category>
+      <description>To commemorate the 80th anniversary of the Treaty of Friendship between Switzerland and India, the Embassy of Switzerland in New Delhi commissioned ANSH&amp;CO to architect the official celebratory visual system.</description>
+    </item>
+
+    <item>
+      <title>ANSH&amp;CO Named Among India's Best Design Studios to Work For — 4th Consecutive Year</title>
+      <link>https://anshandco.com/?news=best-places-to-work</link>
+      <guid isPermaLink="true">https://anshandco.com/?news=best-places-to-work</guid>
+      <pubDate>Sun, 18 Jan 2026 09:00:00 GMT</pubDate>
+      <category>Culture &amp; Studio</category>
+      <description>For the fourth year running, ANSH&amp;CO has been recognized by the Design India Collective as one of the country's premier creative workplaces.</description>
+    </item>
+
+    <item>
+      <title>Website Slow Hai Laale? — High-Speed Next.js Architecture &amp; Conversion Optimization</title>
+      <link>https://anshandco.com/?case=showcase-extension-1</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=showcase-extension-1</guid>
+      <pubDate>Fri, 10 Apr 2026 10:00:00 GMT</pubDate>
+      <category>Web Performance</category>
+      <description>High-speed digital performance, lightning-fast Next.js interfaces, and conversion-optimized architectures delivering 99+ PageSpeed scores and 3.4x spike in D2C sales.</description>
+    </item>
+
+    <item>
+      <title>Smart Kaam Yaar — Autonomous AI Agents &amp; Enterprise Workflow Automation</title>
+      <link>https://anshandco.com/?case=showcase-extension-2</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=showcase-extension-2</guid>
+      <pubDate>Wed, 08 Apr 2026 10:00:00 GMT</pubDate>
+      <category>AI Automation</category>
+      <description>Custom AI agents, automated CRM pipelines, and intelligent enterprise workflows saving 40+ hours per week per team with 10x faster lead qualification.</description>
+    </item>
+
+    <item>
+      <title>Zero To Viral — High-Retention Reels, Motion Graphics &amp; Short-Form Video Production</title>
+      <link>https://anshandco.com/?case=showcase-extension-3</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=showcase-extension-3</guid>
+      <pubDate>Sun, 05 Apr 2026 10:00:00 GMT</pubDate>
+      <category>Video Editing</category>
+      <description>Scroll-stopping cinematic reels with precision pacing, dynamic typography, and sound design driving 5M+ organic impressions and 4.8x higher watch time.</description>
+    </item>
+
+    <item>
+      <title>Roots and Sky — Botanical Luxury Brand Identity &amp; Sustainable Packaging</title>
+      <link>https://anshandco.com/?case=roots-and-sky</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=roots-and-sky</guid>
+      <pubDate>Sat, 28 Mar 2026 10:00:00 GMT</pubDate>
+      <category>Brand Identity</category>
+      <description>Category-defining identity and sustainable tactile packaging for Roots and Sky botanical wellness, achieving a 240% increase in D2C conversion.</description>
+    </item>
+
+    <item>
+      <title>OTR Make It Yours — Beverage Spirit Packaging &amp; Retail Experience</title>
+      <link>https://anshandco.com/?case=otr-make-it-yours</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=otr-make-it-yours</guid>
+      <pubDate>Sun, 22 Mar 2026 10:00:00 GMT</pubDate>
+      <category>Packaging</category>
+      <description>Custom glass bottle silhouette and bold typographic label system for OTR, selling out 50,000 units in 3 weeks and winning Gold at IBDA.</description>
+    </item>
+
+    <item>
+      <title>RURU — Artisanal Ice Cream Brand Architecture &amp; Spatial Identity</title>
+      <link>https://anshandco.com/?case=ruru</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=ruru</guid>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 GMT</pubDate>
+      <category>Food &amp; Beverage</category>
+      <description>Expressive brand world, custom display typeface, and flagship scoop shop interiors for RURU artisanal ice cream, driving 3.2x footfall growth.</description>
+    </item>
+
+    <item>
+      <title>Goodhairr Co Professional — Salon-Grade Haircare Identity &amp; D2C Web Flagship</title>
+      <link>https://anshandco.com/?case=goodhairr-co-professional</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=goodhairr-co-professional</guid>
+      <pubDate>Fri, 06 Mar 2026 10:00:00 GMT</pubDate>
+      <category>Beauty &amp; Packaging</category>
+      <description>24-SKU professional haircare range architecture and D2C e-commerce flagship onboarding 450+ partner salons in Q1.</description>
+    </item>
+
+    <item>
+      <title>Our Mocks — Cultural Streetwear Apparel &amp; Editorial Lookbook</title>
+      <link>https://anshandco.com/?case=our-mocks</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=our-mocks</guid>
+      <pubDate>Wed, 25 Feb 2026 10:00:00 GMT</pubDate>
+      <category>Apparel</category>
+      <description>Cultural streetwear capsule and interactive digital lookbook combining classical Indian typography with utilitarian silhouettes.</description>
+    </item>
+
+    <item>
+      <title>Makimono — Pan-Asian Culinary Hospitality &amp; Tabletop Experience</title>
+      <link>https://anshandco.com/?case=makimono</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=makimono</guid>
+      <pubDate>Thu, 12 Feb 2026 10:00:00 GMT</pubDate>
+      <category>Hospitality</category>
+      <description>Origami-inspired unboxing ritual and brand identity for Makimono, increasing repeat delivery orders by 68%.</description>
+    </item>
+
+    <item>
+      <title>Cubic — Modular Architectural Workspace Systems &amp; 3D Configurator</title>
+      <link>https://anshandco.com/?case=cubic</link>
+      <guid isPermaLink="true">https://anshandco.com/?case=cubic</guid>
+      <pubDate>Sun, 01 Feb 2026 10:00:00 GMT</pubDate>
+      <category>Architecture &amp; Digital</category>
+      <description>Dynamic geometric identity and interactive 3D web configurator for Cubic modular acoustic pods, generating $4.2M in enterprise B2B pipeline.</description>
+    </item>
+  </channel>
+</rss>

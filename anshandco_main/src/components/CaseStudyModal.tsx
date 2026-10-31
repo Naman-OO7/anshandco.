@@ -212,7 +212,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
                   <img
                     key={`${src}-${idx}`}
                     src={src}
-                    alt={study.title}
+                    alt={`${study.title} — ${study.client} case study by ANSH&CO brand custodianship and AI services studio (${idx + 1} of ${galleryImages.length})`}
                     referrerPolicy="no-referrer"
                     onError={(e) => handleImageFallback(e, src)}
                     className={`w-full h-full object-contain mx-auto shadow-2xl transition-opacity duration-1000 ease-in-out select-none rounded-none block ${
@@ -237,19 +237,54 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
                 {study.title}
               </h2>
             </div>
-            <button
-              type="button"
-              onClick={() => {
-                onClose();
-                if (onOpenContact) {
-                  onOpenContact();
-                }
-              }}
-              className="text-[12px] uppercase font-normal tracking-[0.15em] text-neutral-600 dark:text-neutral-400 hover:text-[#e38528] dark:hover:text-[#e38528] flex items-center gap-1.5 cursor-pointer transition-colors"
-            >
-              <span>anshandco.com</span>
-              <ExternalLink size={14} />
-            </button>
+            <div className="flex flex-col sm:items-end gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  onClose();
+                  if (onOpenContact) {
+                    onOpenContact();
+                  }
+                }}
+                className="text-[12px] uppercase font-normal tracking-[0.15em] text-neutral-600 dark:text-neutral-400 hover:text-[#e38528] dark:hover:text-[#e38528] flex items-center gap-1.5 cursor-pointer transition-colors"
+              >
+                <span>anshandco.com</span>
+                <ExternalLink size={14} />
+              </button>
+              {study.id === 'showcase-extension-1' && (
+                <a
+                  href="https://wa.me/917668422047?text=Hi%20ANSH%26CO%2C%20my%20website%20is%20slow%20or%20not%20converting%20traffic%20into%20sales.%20I%20want%20a%20free%20speed%20and%20conversion%20audit."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Fix your slow website and boost sales with ANSH&CO Next.js engineering"
+                  className="inline-flex items-center text-[11px] font-mono uppercase tracking-[0.15em] text-black dark:text-white hover:opacity-70 transition-opacity w-fit"
+                >
+                  FIX SPEED →
+                </a>
+              )}
+              {study.id === 'showcase-extension-3' && (
+                <a
+                  href="https://wa.me/917668422047?text=Hi%20ANSH%26CO%2C%20I%20want%20to%20automate%20our%20lead%20capture%20and%20CRM%20workflow."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Automate your business workflows and CRM pipeline with ANSH&CO"
+                  className="inline-flex items-center text-[11px] font-mono uppercase tracking-[0.15em] text-black dark:text-white hover:opacity-70 transition-opacity w-fit"
+                >
+                  AUTOMATE WORKFLOW →
+                </a>
+              )}
+              {study.id === 'otr-make-it-yours' && (
+                <a
+                  href="https://wa.me/917668422047?text=Hi%20ANSH%26CO%2C%20we%20have%20raw%20footage%20and%20want%20to%20scale%20with%20viral%20reels%20and%20video%20production."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Transform raw footage into viral reels with ANSH&CO video production"
+                  className="inline-flex items-center text-[11px] font-mono uppercase tracking-[0.15em] text-black dark:text-white hover:opacity-70 transition-opacity w-fit"
+                >
+                  GO VIRAL →
+                </a>
+              )}
+            </div>
           </div>
 
           {/* Tags */}

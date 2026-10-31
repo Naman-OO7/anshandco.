@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
+  <!-- Primary Core Pages -->
+  <url>
+    <loc>https://anshandco.com/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://anshandco.com/assets/aistudio/ansh_logo_d7f34171.jpg</image:loc>
+      <image:title>ANSH&amp;CO — Brand Custodians, AI Solutions &amp; Web Engineering Studio Logo</image:title>
+      <image:caption>Official logo of ANSH&amp;CO Brand Custodianship and AI Services Studio in Dehradun, India</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://anshandco.com/logo.png</image:loc>
+      <image:title>ANSH&amp;CO Brand Mark</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/anshandco-poster.jpg</video:thumbnail_loc>
+      <video:title>ANSH&amp;CO Official Brand Showreel — Brand Custodianship &amp; AI Solutions</video:title>
+      <video:description>ANSH&amp;CO in-house creative, Next.js web engineering, AI workflow automation, and brand custodianship showreel.</video:description>
+      <video:content_loc>https://anshandco.com/hero-vid.mp4</video:content_loc>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?page=what-we-are</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?page=who-we-are</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?page=what-we-provide</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?page=who-trust-us</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Flagship Case Study Deep Links -->
+  <url>
+    <loc>https://anshandco.com/?case=showcase-extension-1</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/m1.jpg</image:loc>
+      <image:title>High-Speed Next.js Web Development &amp; Conversion Rate Optimization by ANSH&amp;CO</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=showcase-extension-2</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/m3.jpg</image:loc>
+      <image:title>Viral Meme Marketing Strategy &amp; High-Converting Ad Campaigns by ANSH&amp;CO</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=showcase-extension-3</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/feature_video-poster.jpg</video:thumbnail_loc>
+      <video:title>AI Business Workflow Automation &amp; Custom CRM Pipeline Engineering by ANSH&amp;CO</video:title>
+      <video:description>Intelligent AI workflow automations and trigger-based CRM pipelines engineered by ANSH&amp;CO.</video:description>
+      <video:content_loc>https://file.garden/aqpuSRZZW6ZbIllx/feature_video.mp4</video:content_loc>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=roots-and-sky</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/meme1.jpg</image:loc>
+      <image:title>Performance Marketing &amp; Brand Dominance Strategy by ANSH&amp;CO</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=otr-make-it-yours</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/meme2.jpg</image:loc>
+      <image:title>Cinematic Viral Video Editing &amp; Short-Form Reel Production by ANSH&amp;CO</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=ruru</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/anshandco-poster.jpg</video:thumbnail_loc>
+      <video:title>ANSH&amp;CO Signature Brand Identity Reveal</video:title>
+      <video:description>Kinetic brandmark reveal and luxury visual identity system by ANSH&amp;CO.</video:description>
+      <video:content_loc>https://file.garden/aqpuSRZZW6ZbIllx/anshandco_logo.mp4</video:content_loc>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=goodhairr-co-professional</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/liquid-chrome-poster.jpg</video:thumbnail_loc>
+      <video:title>ANSH&amp;CO Professional Liquid Chrome 3D Brand Reveal</video:title>
+      <video:description>3D liquid chrome motion identity, packaging system, and AI creative engineering by ANSH&amp;CO.</video:description>
+      <video:content_loc>https://file.garden/aqpuSRZZW6ZbIllx/Liquid_chrome_logo_reveal.mp4</video:content_loc>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=our-mocks</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/l1.jpg</image:loc>
+      <image:title>ANSH&amp;CO Brand Custodianship Mockups &amp; Packaging Architecture</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=makimono</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/feature_video2-poster.jpg</video:thumbnail_loc>
+      <video:title>Organic SEO &amp; Search Dominance Growth Engine by ANSH&amp;CO</video:title>
+      <video:description>Technical SEO architecture and organic customer acquisition funnels engineered by ANSH&amp;CO.</video:description>
+      <video:content_loc>https://file.garden/aqpuSRZZW6ZbIllx/feature_video2.mp4</video:content_loc>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://anshandco.com/?case=cubic</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Resident Guild Specialist Portfolios -->
+  <url>
+    <loc>https://anshandco.com/?portfolio=naman</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://anshandco.com/?portfolio=member-02</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://anshandco.com/?portfolio=member-03</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://anshandco.com/?portfolio=member-04</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://anshandco.com/?portfolio=member-05</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://anshandco.com/?portfolio=member-06</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://anshandco.com/?portfolio=hardeep</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+</urlset>

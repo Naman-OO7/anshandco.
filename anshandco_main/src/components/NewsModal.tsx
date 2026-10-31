@@ -44,7 +44,7 @@ export const NewsModal: React.FC<NewsModalProps> = ({ update, onClose, onOpenCon
         <div className="w-full bg-neutral-950 flex items-center justify-center mb-8 p-3 sm:p-6 overflow-hidden border border-neutral-200 dark:border-neutral-800">
           <img
             src={update.imageUrl}
-            alt={update.title}
+            alt={`${update.title} — ${update.category} recognition for ANSH&CO brand custodianship and AI engineering studio`}
             onError={(e) => {
               if (update.id === 'ibda-2026') {
                 e.currentTarget.src = '/news/ibda.jpg';

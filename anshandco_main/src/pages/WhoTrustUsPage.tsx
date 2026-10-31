@@ -121,7 +121,7 @@ export const WhoTrustUsPage: React.FC<WhoTrustUsPageProps> = ({
                     {partner.logoUrl ? (
                       <img
                         src={partner.logoUrl}
-                        alt={partner.name}
+                        alt={`${partner.name} — ${partner.category} enterprise partner trusting ANSH&CO for brand custodianship and AI services`}
                         className="max-h-12 max-w-[180px] object-contain transition-all duration-300"
                         onError={(e) => {
                           (e.target as HTMLElement).style.display = 'none';

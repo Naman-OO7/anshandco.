@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ANSH&amp;CO — Brand Custodians &amp; Digital Architects | Case Studies &amp; News</title>
+  <subtitle>Official WebSub / Atom feed for ANSH&amp;CO (Ansh and Co.) featuring new case studies, AI automation deployments, design sprints, and agency news.</subtitle>
+  <link href="https://anshandco.com/" rel="alternate" type="text/html" />
+  <link href="https://anshandco.com/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+  <id>https://anshandco.com/</id>
+  <updated>2026-04-17T00:00:00Z</updated>
+  <icon>https://anshandco.com/assets/aistudio/ansh_logo_d7f34171.jpg</icon>
+  <logo>https://anshandco.com/assets/aistudio/ansh_logo_d7f34171.jpg</logo>
+  <author>
+    <name>ANSH&amp;CO (Anshul Sharma)</name>
+    <email>team@anshandco.com</email>
+    <uri>https://anshandco.com/</uri>
+  </author>
+  <rights>Copyright (c) 2026 ANSH&amp;CO. All rights reserved.</rights>
+
+  <!-- NEWS & RECOGNITION -->
+  <entry>
+    <title>ANSH&amp;CO Bags 34 Metals at India's Best Design Awards 2026</title>
+    <link href="https://anshandco.com/?news=ibda-2026" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?news=ibda-2026</id>
+    <published>2026-03-15T09:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Awards &amp; Recognition" />
+    <summary>In an unprecedented sweep at the 11th edition of India's Best Design Awards (IBDA), ANSH&amp;CO was honored with 34 metals across brand identity, packaging architecture, and digital product design.</summary>
+  </entry>
+
+  <entry>
+    <title>Embassy of Switzerland Unveils the Official '80 Years of Friendship' Identity by ANSH&amp;CO</title>
+    <link href="https://anshandco.com/?news=switzerland-india-80" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?news=switzerland-india-80</id>
+    <published>2026-02-20T09:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Diplomatic Identity" />
+    <summary>To commemorate the 80th anniversary of the Treaty of Friendship between Switzerland and India, the Embassy of Switzerland in New Delhi commissioned ANSH&amp;CO to architect the official celebratory visual system.</summary>
+  </entry>
+
+  <entry>
+    <title>ANSH&amp;CO Named Among India's Best Design Studios to Work For — 4th Consecutive Year</title>
+    <link href="https://anshandco.com/?news=best-places-to-work" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?news=best-places-to-work</id>
+    <published>2026-01-18T09:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Culture &amp; Studio" />
+    <summary>Great design is downstream of great culture. For the fourth year running, ANSH&amp;CO has been recognized by the Design India Collective as one of the country's premier creative workplaces.</summary>
+  </entry>
+
+  <!-- CASE STUDIES -->
+  <entry>
+    <title>Website Slow Hai Laale? — High-Speed Next.js Architecture &amp; Conversion Optimization</title>
+    <link href="https://anshandco.com/?case=showcase-extension-1" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=showcase-extension-1</id>
+    <published>2026-04-10T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Web Performance" />
+    <category term="Conversion Optimization" />
+    <summary>We engineer high-speed digital performance, lightning-fast Next.js interfaces, and conversion-optimized architectures achieving 99+ PageSpeed scores, near-zero bounce rate, and a 3.4x spike in direct-to-consumer sales.</summary>
+  </entry>
+
+  <entry>
+    <title>Smart Kaam Yaar — Autonomous AI Agents &amp; Enterprise Workflow Automation</title>
+    <link href="https://anshandco.com/?case=showcase-extension-2" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=showcase-extension-2</id>
+    <published>2026-04-08T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="AI Agents" />
+    <category term="Workflow Automation" />
+    <summary>We replace repetitive manual operations with custom AI agents, automated CRM pipelines, and intelligent workflows—saving 40+ hours per week per team with 10x faster lead qualification.</summary>
+  </entry>
+
+  <entry>
+    <title>Zero To Viral — High-Retention Reels, Motion Graphics &amp; Short-Form Video Production</title>
+    <link href="https://anshandco.com/?case=showcase-extension-3" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=showcase-extension-3</id>
+    <published>2026-04-05T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Video Editing" />
+    <category term="Viral Reels" />
+    <summary>We transform raw, unedited footage into scroll-stopping cinematic reels with precision pacing, dynamic typography, and sound design—driving 5M+ organic impressions and 4.8x higher average watch time.</summary>
+  </entry>
+
+  <entry>
+    <title>Roots and Sky — Botanical Luxury Brand Identity &amp; Sustainable Packaging</title>
+    <link href="https://anshandco.com/?case=roots-and-sky" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=roots-and-sky</id>
+    <published>2026-03-28T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Brand Identity" />
+    <category term="Packaging" />
+    <summary>Roots and Sky approached ANSH&amp;CO to build a category-defining identity for their botanical wellness line, resulting in a 240% increase in direct-to-consumer conversion and placement in 18 luxury retail boutiques.</summary>
+  </entry>
+
+  <entry>
+    <title>OTR Make It Yours — Beverage Spirit Packaging &amp; Retail Experience</title>
+    <link href="https://anshandco.com/?case=otr-make-it-yours" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=otr-make-it-yours</id>
+    <published>2026-03-22T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Packaging" />
+    <category term="Beverage" />
+    <summary>OTR (On The Rocks) needed to disrupt a stagnant ready-to-drink cocktail shelf, selling out its initial 50,000-unit production run in 3 weeks and winning Gold at IBDA.</summary>
+  </entry>
+
+  <entry>
+    <title>RURU — Artisanal Ice Cream Brand Architecture &amp; Spatial Identity</title>
+    <link href="https://anshandco.com/?case=ruru" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=ruru</id>
+    <published>2026-03-14T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Food &amp; Beverage" />
+    <category term="Spatial Design" />
+    <summary>Playful, uninhibited, and unapologetically indulgent brand system for RURU artisanal small-batch ice cream, driving 3.2x footfall growth across flagship scoop shops.</summary>
+  </entry>
+
+  <entry>
+    <title>Goodhairr Co Professional — Salon-Grade Haircare Identity &amp; D2C Web Flagship</title>
+    <link href="https://anshandco.com/?case=goodhairr-co-professional" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=goodhairr-co-professional</id>
+    <published>2026-03-06T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Beauty" />
+    <category term="Packaging" />
+    <summary>Clinical precision meets editorial luxury across a 24-SKU professional salon range, onboarding 450+ partner salons in the first quarter post-rebrand.</summary>
+  </entry>
+
+  <entry>
+    <title>Our Mocks — Cultural Streetwear Apparel &amp; Editorial Lookbook</title>
+    <link href="https://anshandco.com/?case=our-mocks" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=our-mocks</id>
+    <published>2026-02-25T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Apparel" />
+    <category term="Visual Identity" />
+    <summary>A self-initiated cultural apparel capsule exploring the tension between classical Indian typography and utilitarian streetwear silhouettes, selling out in 48 hours.</summary>
+  </entry>
+
+  <entry>
+    <title>Makimono — Pan-Asian Culinary Hospitality &amp; Tabletop Experience</title>
+    <link href="https://anshandco.com/?case=makimono" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=makimono</id>
+    <published>2026-02-12T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Hospitality" />
+    <category term="Packaging" />
+    <summary>Reimagining the contemporary sushi bar and delivery experience for Makimono, boosting repeat delivery orders by 68% and earning a feature in Wallpaper* Magazine.</summary>
+  </entry>
+
+  <entry>
+    <title>Cubic — Modular Architectural Workspace Systems &amp; 3D Configurator</title>
+    <link href="https://anshandco.com/?case=cubic" rel="alternate" type="text/html" />
+    <id>https://anshandco.com/?case=cubic</id>
+    <published>2026-02-01T10:00:00Z</published>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <category term="Architecture" />
+    <category term="Digital" />
+    <summary>Dynamic geometric identity and interactive 3D web configurator for Cubic modular acoustic pods, generating $4.2M in enterprise B2B pipeline within 60 days of launch.</summary>
+  </entry>
+</feed>

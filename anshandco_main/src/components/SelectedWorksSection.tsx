@@ -56,8 +56,9 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
       >
         {/* TOP ROW: 3 Sections in 1 Horizontal Row */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-8 items-start">
-          {/* Card 0: Rectangular format */}
-          <div 
+          {/* 1. WEBSITE SPEED & CRO SECTION (Card 0) */}
+          <section
+            aria-label="High-Speed Next.js Website Development and Conversion Rate Optimization"
             onMouseEnter={() => setHoveredCard(0)}
             onMouseLeave={() => setHoveredCard(null)}
             className={`col-span-1 md:col-span-4 flex flex-col transition-all duration-300 ease-out transform cursor-pointer card-hover-lift ${
@@ -68,24 +69,34 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <MediaCard study={extension1} onSelect={() => onSelectCaseStudy(extension1)} aspect="aspect-[2/3]" />
-            <div className="flex items-center justify-between mt-4 mb-2">
-              <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
-                {extension1.title}
-              </h3>
+            <h2 className="sr-only">High-Speed Next.js Web Development &amp; Conversion Optimization Agency</h2>
+            <MediaCard
+              study={extension1}
+              onSelect={() => onSelectCaseStudy(extension1)}
+              aspect="aspect-[2/3]"
+              altText="High-speed Next.js web development, AI conversion rate optimization, and brand custodianship architecture by ANSH&CO"
+            />
+            <div className="flex items-center justify-between mt-4 mb-2" onClick={() => onSelectCaseStudy(extension1)}>
+              <p className="hinglish-headline text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
+                WEBSITE SLOW HAI LAALE?
+              </p>
               <div className={`p-1.5 rounded-full bg-black dark:bg-white text-white dark:text-black transition-all duration-300 transform ${
                 hoveredCard === 0 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-75 -translate-x-2 pointer-events-none'
               }`}>
                 <ArrowUpRight size={14} />
               </div>
             </div>
-            <p className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400 line-clamp-6">
-              {extension1.summary}
+            <p
+              onClick={() => onSelectCaseStudy(extension1)}
+              className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400 line-clamp-6"
+            >
+              User rukta nahi... seedha bhaag jata hai, phir bolte ho sale kyu nahi? We engineer high-speed digital performance, lightning-fast Next.js interfaces, and conversion-optimized architectures so your traffic actually turns into sales and inbound calls.
             </p>
-          </div>
+          </section>
 
-          {/* Card 1: Automatic Carousel */}
-          <div 
+          {/* 2. VIRAL MEME & POP-CULTURE MARKETING SECTION (Card 1) */}
+          <section
+            aria-label="Viral Meme Marketing Strategy and High-Converting Ad Campaigns"
             onMouseEnter={() => setHoveredCard(1)}
             onMouseLeave={() => setHoveredCard(null)}
             className={`col-span-1 md:col-span-4 flex flex-col transition-all duration-300 ease-out transform cursor-pointer card-hover-lift ${
@@ -96,6 +107,7 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
+            <h2 className="sr-only">Viral Meme Marketing, Pop-Culture Hooks &amp; High-Converting Ad Agency India</h2>
             <AutoMockCarousel
               images={extension2.gallery || [
                 'https://file.garden/aqpuSRZZW6ZbIllx/m3.jpg',
@@ -104,25 +116,30 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 'https://file.garden/aqpuSRZZW6ZbIllx/m3.jpg'
               ]}
               aspect="aspect-[2/3]"
+              alt="Viral meme marketing strategy, AI-assisted social media ad workflows, and brand custodianship campaigns by ANSH&CO"
               onClick={() => onSelectCaseStudy(extension2)}
             />
-            <div className="flex items-center justify-between mt-4 mb-2">
-              <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
-                {extension2.title}
-              </h3>
+            <div className="flex items-center justify-between mt-4 mb-2" onClick={() => onSelectCaseStudy(extension2)}>
+              <p className="hinglish-headline text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
+                SAMAY BADAL RAHA HAI
+              </p>
               <div className={`p-1.5 rounded-full bg-black dark:bg-white text-white dark:text-black transition-all duration-300 transform ${
                 hoveredCard === 1 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-75 -translate-x-2 pointer-events-none'
               }`}>
                 <ArrowUpRight size={14} />
               </div>
             </div>
-            <p className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400 line-clamp-6">
-              {extension2.summary}
+            <p
+              onClick={() => onSelectCaseStudy(extension2)}
+              className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400 line-clamp-6"
+            >
+              Samay badal raha hai aur bhagwan ka diya sab kuch hai, bas acchi marketing nahi hai? Aa jao, viral meme strategy, killer pop-culture hooks aur high-converting Meta &amp; Google campaigns se sab badalenge.
             </p>
-          </div>
+          </section>
 
-          {/* Card 2: Vertical Video Card */}
-          <div 
+          {/* 3. AI BUSINESS AUTOMATION & CUSTOM CRM SECTION (Card 2) */}
+          <section
+            aria-label="AI Business Workflow Automation and Custom CRM Pipeline Engineering"
             onMouseEnter={() => setHoveredCard(2)}
             onMouseLeave={() => setHoveredCard(null)}
             className={`col-span-1 md:col-span-4 flex flex-col transition-all duration-300 ease-out transform cursor-pointer card-hover-lift ${
@@ -133,27 +150,37 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <MediaCard study={extension3} onSelect={() => onSelectCaseStudy(extension3)} aspect="aspect-[2/3]" />
-            <div className="flex items-center justify-between mt-4 mb-2">
-              <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
-                {extension3.title}
-              </h3>
+            <h2 className="sr-only">AI Business Workflow Automation &amp; Custom CRM/ERP Software Development</h2>
+            <MediaCard
+              study={extension3}
+              onSelect={() => onSelectCaseStudy(extension3)}
+              aspect="aspect-[2/3]"
+              altText="Custom AI workflow automation, intelligent CRM pipeline integration, and brand custodianship solutions engineered by ANSH&CO"
+            />
+            <div className="flex items-center justify-between mt-4 mb-2" onClick={() => onSelectCaseStudy(extension3)}>
+              <p className="hinglish-headline text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
+                BUSINESS AUTOMATION &amp; WORKFLOWS
+              </p>
               <div className={`p-1.5 rounded-full bg-black dark:bg-white text-white dark:text-black transition-all duration-300 transform ${
                 hoveredCard === 2 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-75 -translate-x-2 pointer-events-none'
               }`}>
                 <ArrowUpRight size={14} />
               </div>
             </div>
-            <p className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400">
-              {extension3.summary}
+            <p
+              onClick={() => onSelectCaseStudy(extension3)}
+              className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400"
+            >
+              Your business looks good, but manual bottlenecks kill growth. We engineer intelligent AI workflow automations and trigger-based architectures that automatically capture leads from your website and WhatsApp, sync custom CRM pipelines, and execute complex operations on complete autopilot.
             </p>
-          </div>
+          </section>
         </div>
 
         {/* BOTTOM ROW: Roots & Sky (3 cols), OTR (3 cols), OUR REVEAL (6 cols) */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-8 items-start">
-          {/* Card 3: Roots and Sky */}
-          <div 
+          {/* 4. MARKET DOMINANCE & PERFORMANCE ADS SECTION (Card 3) */}
+          <section
+            aria-label="Performance Marketing and Brand Dominance Strategy"
             onMouseEnter={() => setHoveredCard(3)}
             onMouseLeave={() => setHoveredCard(null)}
             className={`col-span-1 md:col-span-3 flex flex-col transition-all duration-300 ease-out transform cursor-pointer group card-hover-lift ${
@@ -164,24 +191,34 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <MediaCard study={rootsAndSky} onSelect={() => onSelectCaseStudy(rootsAndSky)} aspect="aspect-[9/14]" />
-            <div className="flex items-center justify-between mt-4 mb-2">
-              <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
-                {rootsAndSky.title}
-              </h3>
+            <h2 className="sr-only">Performance Marketing, Meta Ads &amp; Category Dominance Agency</h2>
+            <MediaCard
+              study={rootsAndSky}
+              onSelect={() => onSelectCaseStudy(rootsAndSky)}
+              aspect="aspect-[9/14]"
+              altText="Performance marketing, AI-powered Meta and Google Ads scaling, and brand custodianship strategy by ANSH&CO"
+            />
+            <div className="flex items-center justify-between mt-4 mb-2" onClick={() => onSelectCaseStudy(rootsAndSky)}>
+              <p className="hinglish-headline text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
+                MARKET MEIN BHAUKAAL
+              </p>
               <div className={`p-1.5 rounded-full bg-black dark:bg-white text-white dark:text-black transition-all duration-300 transform ${
                 hoveredCard === 3 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-75 -translate-x-2 pointer-events-none'
               } group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 group-hover:pointer-events-auto`}>
                 <ArrowUpRight size={14} />
               </div>
             </div>
-            <p className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400 line-clamp-6">
-              {rootsAndSky.summary}
+            <p
+              onClick={() => onSelectCaseStudy(rootsAndSky)}
+              className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400 line-clamp-6"
+            >
+              You handle the business while we create undeniable market dominance through killer brand strategy, explosive Meta &amp; Google performance ads, and cultural hype.
             </p>
-          </div>
+          </section>
 
-          {/* Card 4: OTR Make It Yours */}
-          <div 
+          {/* 5. CINEMATIC VIDEO & VIRAL REELS SECTION (Card 4) */}
+          <section
+            aria-label="Cinematic Video Production and Viral Short-Form Reel Editing"
             onMouseEnter={() => setHoveredCard(4)}
             onMouseLeave={() => setHoveredCard(null)}
             className={`col-span-1 md:col-span-3 flex flex-col transition-all duration-300 ease-out transform cursor-pointer group card-hover-lift ${
@@ -192,21 +229,30 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <MediaCard study={otr} onSelect={() => onSelectCaseStudy(otr)} aspect="aspect-[9/14]" />
-            <div className="flex items-center justify-between mt-4 mb-2">
-              <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
-                {otr.title}
-              </h3>
+            <h2 className="sr-only">Cinematic Video Editing &amp; Viral Instagram/YouTube Reels Production Studio</h2>
+            <MediaCard
+              study={otr}
+              onSelect={() => onSelectCaseStudy(otr)}
+              aspect="aspect-[9/14]"
+              altText="Cinematic viral video editing, AI video generation workflows, and brand custodianship reel production at ANSH&CO"
+            />
+            <div className="flex items-center justify-between mt-4 mb-2" onClick={() => onSelectCaseStudy(otr)}>
+              <p className="hinglish-headline text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
+                BACCHA HAI TU MERA
+              </p>
               <div className={`p-1.5 rounded-full bg-black dark:bg-white text-white dark:text-black transition-all duration-300 transform ${
                 hoveredCard === 4 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-75 -translate-x-2 pointer-events-none'
               } group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 group-hover:pointer-events-auto`}>
                 <ArrowUpRight size={14} />
               </div>
             </div>
-            <p className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400 line-clamp-6">
-              {otr.summary}
+            <p
+              onClick={() => onSelectCaseStudy(otr)}
+              className="text-[12px] leading-[1.7] font-light text-neutral-600 dark:text-neutral-400 line-clamp-6"
+            >
+              Hand over your messy raw footage because our in-house master editors transform basic clips into cinematic viral gold for Instagram Reels, YouTube Shorts, and high-ROAS video ads.
             </p>
-          </div>
+          </section>
 
           {/* Card 5: OUR REVEAL */}
           <div 
@@ -220,7 +266,12 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
                 : 'opacity-100'
             }`}
           >
-            <MediaCard study={ruru} onSelect={() => onSelectCaseStudy(ruru)} aspect="aspect-[4/3] md:aspect-[1.15/1]" />
+            <MediaCard
+              study={ruru}
+              onSelect={() => onSelectCaseStudy(ruru)}
+              aspect="aspect-[4/3] md:aspect-[1.15/1]"
+              altText="ANSH&CO brand identity reveal, creative direction, and AI-powered brand custodianship showcase"
+            />
             <div className="flex items-center justify-between mt-4 mb-2">
               <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white">
                 {ruru.title}
@@ -245,7 +296,8 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
           <MediaCard 
             study={anshProfessional} 
             onSelect={() => onSelectCaseStudy(anshProfessional)} 
-            aspect="aspect-[16/9] md:aspect-[21/9]" 
+            aspect="aspect-[16/9] md:aspect-[21/9]"
+            altText="ANSH&CO Professional 3D liquid chrome identity, brand custodianship, and AI creative engineering showcase"
           />
           <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white mt-6 mb-2 group-hover:text-[#e38528] transition-colors">
             {anshProfessional.title}
@@ -264,6 +316,7 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
           >
             <AutoMockCarousel
               aspect="aspect-[4/3] md:aspect-[1.15/1]"
+              alt="ANSH&CO brand custodianship mockups, tactile packaging design, and AI-driven visual identity systems"
               onClick={() => onSelectCaseStudy(ourMocks)}
             />
             <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white mt-4 mb-2 group-hover:text-[#e38528] transition-colors">
@@ -279,7 +332,12 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
             onClick={() => onSelectCaseStudy(makimono)}
             className="col-span-1 md:col-span-3 flex flex-col cursor-pointer group card-hover-lift"
           >
-            <MediaCard study={makimono} onSelect={() => onSelectCaseStudy(makimono)} aspect="aspect-[9/14]" />
+            <MediaCard
+              study={makimono}
+              onSelect={() => onSelectCaseStudy(makimono)}
+              aspect="aspect-[9/14]"
+              altText="Technical SEO domination, AI search engine optimization, and long-term brand custodianship by ANSH&CO"
+            />
             <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white mt-4 mb-2 group-hover:text-[#e38528] transition-colors">
               {makimono.title}
             </h3>
@@ -293,7 +351,12 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({
             onClick={() => onSelectCaseStudy(cubic)}
             className="col-span-1 md:col-span-3 flex flex-col cursor-pointer group card-hover-lift"
           >
-            <MediaCard study={cubic} onSelect={() => onSelectCaseStudy(cubic)} aspect="aspect-[9/14]" />
+            <MediaCard
+              study={cubic}
+              onSelect={() => onSelectCaseStudy(cubic)}
+              aspect="aspect-[9/14]"
+              altText="End-to-end brand custodianship, AI automation services, and omnichannel growth execution by ANSH&CO"
+            />
             <h3 className="text-[15px] font-medium tracking-wide uppercase text-black dark:text-white mt-4 mb-2 group-hover:text-[#e38528] transition-colors">
               {cubic.title}
             </h3>
@@ -328,12 +391,15 @@ interface MediaCardProps {
   study: CaseStudy;
   onSelect: () => void;
   aspect: string;
+  altText?: string;
 }
 
-const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect }) => {
+const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect, altText }) => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const [isInView, setIsInView] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const primaryImg = hasError ? study.posterUrl : study.mediaUrl;
@@ -347,6 +413,26 @@ const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect }) => {
   const secondaryFallback = CASE_STUDY_SECONDARY_FALLBACKS[study.id] || '/m2.jpg';
 
   useEffect(() => {
+    const el = containerRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') {
+      setIsInView(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setIsInView(entry.isIntersecting);
+        });
+      },
+      { rootMargin: '250px 0px' }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     const video = videoRef.current;
     if (!video || study.mediaType !== 'video') return;
 
@@ -354,7 +440,7 @@ const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect }) => {
     video.defaultMuted = isMuted;
     video.volume = 1;
 
-    if (isPlaying) {
+    if (isPlaying && isInView) {
       const playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
@@ -369,7 +455,7 @@ const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect }) => {
     } else {
       video.pause();
     }
-  }, [study.mediaUrl, isPlaying, study.mediaType, isMuted]);
+  }, [study.mediaUrl, isPlaying, isInView, study.mediaType, isMuted]);
 
   const togglePlay = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -399,11 +485,21 @@ const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect }) => {
 
   return (
     <div
+      ref={containerRef}
       onClick={onSelect}
       className={`relative w-full ${aspect} bg-neutral-900 overflow-hidden cursor-pointer group select-none transition-all duration-300 ease-out transform video-container-lift`}
     >
       {study.mediaType === 'video' && !hasError ? (
         <>
+          {altText && (
+            <img
+              src={study.posterUrl}
+              alt={altText}
+              loading="lazy"
+              decoding="async"
+              className="sr-only"
+            />
+          )}
           <video
             ref={videoRef}
             src={
@@ -421,7 +517,7 @@ const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect }) => {
             loop
             muted
             playsInline
-            preload="auto"
+            preload="metadata"
             poster={study.posterUrl}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
@@ -542,7 +638,9 @@ const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect }) => {
           {/* Base Primary Image - Smoothly cross-fades out on hover */}
           <img
             src={primaryImg}
-            alt={study.title}
+            alt={altText || `${study.title} — ANSH&CO brand custodianship and AI services case study`}
+            loading="lazy"
+            decoding="async"
             referrerPolicy="no-referrer"
             onError={(e) => {
               if (study.id === 'roots-and-sky') {
@@ -563,7 +661,9 @@ const MediaCard: React.FC<MediaCardProps> = ({ study, onSelect, aspect }) => {
           {/* Secondary Cross-Fade Image - Smoothly cross-fades in on hover */}
           <img
             src={secondaryImg}
-            alt={`${study.title} alternate perspective`}
+            alt={altText ? `${altText} — alternate perspective` : `${study.title} — alternate view by ANSH&CO brand custodianship and AI services`}
+            loading="lazy"
+            decoding="async"
             referrerPolicy="no-referrer"
             onError={(e) => {
               e.currentTarget.src = secondaryFallback;

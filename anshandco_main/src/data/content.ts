@@ -67,7 +67,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     dimensions: '278x450',
     aspectClass: 'aspect-[9/14]',
     colSpanClass: 'col-span-12 md:col-span-3',
-    summary: 'You handle the business while we create undeniable market dominance through killer strategy, explosive ads, and hype.',
+    summary: 'You handle the business while we create undeniable market dominance through killer brand strategy, explosive Meta & Google performance ads, and cultural hype.',
     tags: ['Brand Strategy', 'Market Dominance', 'Performance Ads', 'Social Hype'],
     link: 'https://www.anshandco.com',
     fullDetails: {
@@ -91,7 +91,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     dimensions: '278x450',
     aspectClass: 'aspect-[9/14]',
     colSpanClass: 'col-span-12 md:col-span-3',
-    summary: 'Hand over your messy raw footage because our master editors transform basic clips into cinematic viral gold.',
+    summary: 'Hand over your messy raw footage because our in-house master editors transform basic clips into cinematic viral gold for Instagram Reels, YouTube Shorts, and high-ROAS video ads.',
     tags: ['Video Editing', 'Post Production', 'Motion Design', 'Viral Cuts'],
     link: 'https://www.anshandco.com',
     fullDetails: {
@@ -157,7 +157,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     dimensions: '1200x1500',
     aspectClass: 'aspect-[4/5]',
     colSpanClass: 'col-span-12 md:col-span-4',
-    summary: 'User rukta nahi... seedha bhaag jata hai, phir bolte ho sale kyu nahi? We engineer high-speed digital performance, lightning-fast interfaces, and conversion-optimized architectures so your traffic actually turns into sales.',
+    summary: 'User rukta nahi... seedha bhaag jata hai, phir bolte ho sale kyu nahi? We engineer high-speed digital performance, lightning-fast Next.js interfaces, and conversion-optimized architectures so your traffic actually turns into sales and inbound calls.',
     tags: ['Web Performance', 'Conversion Optimization', 'Landing Pages', 'Viral Creatives'],
     link: 'https://www.anshandco.com',
     fullDetails: {
@@ -182,7 +182,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     dimensions: '1199x1499',
     aspectClass: 'aspect-[4/5]',
     colSpanClass: 'col-span-12 md:col-span-4',
-    summary: 'Samay badal raha hai aur bhagwan ka diya sab kuch hai, bas acchi marketing nahi hai? Aa jao, viral meme strategy, killer pop-culture hooks aur high-converting campaigns se sab badalenge.',
+    summary: 'Samay badal raha hai aur bhagwan ka diya sab kuch hai, bas acchi marketing nahi hai? Aa jao, viral meme strategy, killer pop-culture hooks aur high-converting Meta & Google campaigns se sab badalenge.',
     tags: ['Meme Marketing', 'Pop Culture Strategy', 'Viral Campaigns', 'Social Growth'],
     link: 'https://www.anshandco.com',
     fullDetails: {
@@ -203,7 +203,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     dimensions: '720x1280',
     aspectClass: 'aspect-[4/5]',
     colSpanClass: 'col-span-12 md:col-span-4',
-    summary: 'Your business looks good, but manual bottlenecks kill growth. We engineer intelligent workflow automations and trigger-based architectures that automatically capture leads, sync CRM pipelines, and execute complex operations on complete autopilot so your team can focus exclusively on driving high-impact revenue.',
+    summary: 'Your business looks good, but manual bottlenecks kill growth. We engineer intelligent AI workflow automations and trigger-based architectures that automatically capture leads from your website and WhatsApp, sync custom CRM pipelines, and execute complex operations on complete autopilot.',
     tags: ['Business Automation', 'Workflow Systems', 'CRM Integration', 'Trigger Architecture'],
     link: 'https://www.anshandco.com',
     fullDetails: {

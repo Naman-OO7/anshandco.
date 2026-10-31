@@ -80,7 +80,7 @@ const ClientLogoDisplay: React.FC<{ client: ClientPartner }> = ({ client }) => {
     return (
       <img
         src={client.logoUrl}
-        alt={client.name}
+        alt={`${client.name} — ${client.category} partner of ANSH&CO brand custodianship and AI digital transformation services`}
         referrerPolicy="no-referrer"
         onError={() => setImgFailed(true)}
         className="max-h-[50px] max-w-[180px] object-contain transition-all duration-300"

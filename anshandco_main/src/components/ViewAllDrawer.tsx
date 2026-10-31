@@ -106,7 +106,7 @@ export const ViewAllDrawer: React.FC<ViewAllDrawerProps> = ({
                     {/* Primary Cover Image - Fades out on hover */}
                     <img
                       src={study.posterUrl}
-                      alt={study.title}
+                      alt={`${study.title} — ${study.client} case study by ANSH&CO brand custodianship and AI services`}
                       onError={(e) => {
                         if (study.id === 'showcase-extension-1') {
                           e.currentTarget.src = '/m1.jpg';
@@ -122,7 +122,7 @@ export const ViewAllDrawer: React.FC<ViewAllDrawerProps> = ({
                     {/* Secondary Image - Cross-fades in on hover */}
                     <img
                       src={secondaryImg}
-                      alt={`${study.title} preview`}
+                      alt={`${study.title} — interactive preview of ANSH&CO brand custodianship and AI workflow solutions`}
                       onError={(e) => {
                         e.currentTarget.src = fallbackSec;
                       }}
@@ -169,7 +169,7 @@ export const ViewAllDrawer: React.FC<ViewAllDrawerProps> = ({
                     {client.logoUrl ? (
                       <img
                         src={client.logoUrl}
-                        alt={client.name}
+                        alt={`${client.name} — ${client.category} brand custodianship and AI services partner of ANSH&CO`}
                         className="max-h-10 max-w-[160px] object-contain dark:brightness-125"
                         onError={(e) => {
                           (e.target as HTMLElement).style.display = 'none';

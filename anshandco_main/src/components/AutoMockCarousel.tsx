@@ -13,6 +13,7 @@ interface AutoMockCarouselProps {
   className?: string;
   objectFit?: 'cover' | 'contain';
   interactive?: boolean;
+  alt?: string;
   onClick?: () => void;
 }
 
@@ -22,6 +23,7 @@ export const AutoMockCarousel: React.FC<AutoMockCarouselProps> = ({
   className = '',
   objectFit = 'cover',
   interactive = true,
+  alt = 'ANSH&CO brand custodianship, AI services, and digital marketing showcase visual',
   onClick
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,8 +51,9 @@ export const AutoMockCarousel: React.FC<AutoMockCarouselProps> = ({
           <img
             key={`${src}-${index}`}
             src={src}
-            alt="Showcase Visual"
-            loading={index === 0 ? 'eager' : 'lazy'}
+            alt={`${alt} — Slide ${index + 1}`}
+            loading="lazy"
+            decoding="async"
             referrerPolicy="no-referrer"
             onError={(e) => {
               if (src.includes('m3.jpg')) {

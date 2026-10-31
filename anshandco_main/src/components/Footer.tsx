@@ -167,24 +167,31 @@ export const Footer: React.FC<FooterProps> = ({
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pt-10 text-[13px] font-light text-neutral-400">
         {/* Address */}
         <div className="max-w-[420px]">
-          <span className="leading-relaxed block text-neutral-300">
-            ANSH&amp;CO Studios &amp; Headquarters<br />
-            Aman Vihar, Dehradun,<br />
-            Uttarakhand, India.
-          </span>
+          <p className="text-white mb-1">
+            <strong>ANSH&amp;CO Studios &amp; Headquarters</strong>
+          </p>
+          <address className="not-italic leading-relaxed block text-neutral-300">
+            Aman Vihar, Dehradun, Uttarakhand 248001, India
+          </address>
         </div>
 
         {/* Phones & Email */}
-        <div className="flex flex-col gap-1.5">
-          <a href="mailto:contact@anshandco.com" className="text-white hover:text-[#e38528] font-medium transition-colors">
-            contact@anshandco.com
-          </a>
-          <a href="tel:+917668422047" className="hover:text-white transition-colors">
-            +91 76684 22047
-          </a>
-          <a href="tel:+919152762613" className="hover:text-white transition-colors">
-            +91 91527 62613
-          </a>
+        <div className="flex flex-col gap-1.5 text-neutral-300 leading-relaxed">
+          <p>
+            Email:{' '}
+            <a href="mailto:contact@anshandco.com" className="text-white hover:text-[#e38528] font-medium transition-colors">
+              contact@anshandco.com
+            </a>
+            <br />
+            Call Leadership:{' '}
+            <a href="tel:+917668422047" className="text-white hover:text-[#e38528] transition-colors">
+              +91 76684 22047
+            </a>{' '}
+            |{' '}
+            <a href="tel:+919152762613" className="text-white hover:text-[#e38528] transition-colors">
+              +91 91527 62613
+            </a>
+          </p>
         </div>
 
         {/* Social Icons */}

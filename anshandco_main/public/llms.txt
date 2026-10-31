@@ -1,0 +1,45 @@
+# ANSH&CO — Brand Custodians, AI Solutions & Full-Stack Digital Engineering Studio
+
+> ANSH&CO is an independent Brand Custodianship, High-Speed Next.js Web Engineering, AI Workflow Automation, Custom CRM/ERP, and Viral Performance Marketing Studio headquartered in Aman Vihar, Dehradun, Uttarakhand, India, serving ambitious startups and enterprise brands globally.
+
+## Core Identity & Contact
+- **Official Website**: https://anshandco.com/
+- **Full Knowledge Base for AI**: https://anshandco.com/llms-full.txt
+- **Headquarters**: Aman Vihar, Dehradun, Uttarakhand 248001, India
+- **Direct Leadership Phone / WhatsApp**: +91 76684 22047 | +91 91527 62613
+- **Official Email**: contact@anshandco.com
+- **Tagline**: CREATIVE IDEAS. DIGITAL POSSIBILITIES. (Powering Ideas With AI Solutions, Brand Custodianship & Growth)
+- **Operating Model**: 100% In-House Multidisciplinary Execution (Zero freelance handoff loss; 6+ years average client partnership tenure; 50+ flagship brands built and scaled; 3x India's Best Design Awards 2026 winner).
+
+## Primary Navigation & Deep Links
+- [Home — Where it begins?](https://anshandco.com/): Agency manifesto, showreel, selected case studies, service matrix, and FAQ.
+- [What we are? — Brand Custodian Manifesto & 5-Stage Methodology](https://anshandco.com/?page=what-we-are): Our 4 core pillars (Strategic Rigor, Visual Architecture, Bespoke Code & AI, Brand Custodianship) and 5-stage operating flywheel.
+- [Who we are? — The Resident Guild & 7 Core Specialists](https://anshandco.com/?page=who-we-are): Meet our in-house engineers, AI architects, creative directors, and growth strategists.
+- [What we provide? — 15 Specialized In-House Capabilities](https://anshandco.com/?page=what-we-provide): Engineering & Tech, Growth & Marketing, Creative & Content, and Media & Production.
+- [Who trust us? — Enterprise Partners & Client Testimonials](https://anshandco.com/?page=who-trust-us): Partnerships with Warner Bros. Discovery, The Coffee Bean & Tea Leaf, Kanpeki, Bharatiyam Beverages, T&T Group, Disha Publication, and the Embassy of Switzerland in India (SwitzerlandIndia80).
+
+## 15 In-House Services & Capabilities
+1. **Web Development**: High-speed bespoke React & Next.js platforms, headless e-commerce, and Core Web Vitals optimization (99+ PageSpeed scores).
+2. **Mobile App Development**: Native and cross-platform iOS & Android apps (React Native / Flutter).
+3. **Custom CRM**: Bespoke sales pipeline automation, WhatsApp/website lead capture, and third-party API integrations.
+4. **ERP Systems**: Scalable Enterprise Resource Planning for inventory, finance, and operational BI.
+5. **AI Solutions & Workflow Automation**: Trigger-based AI architectures, multi-agent systems, and automated lead qualification saving 40+ hours/week.
+6. **Digital Marketing**: Full-funnel omnichannel growth frameworks and conversion rate optimization (CRO).
+7. **Technical & Organic SEO**: Search engine domination, topical authority, schema architecture, and AEO/GEO optimization.
+8. **Meta Ads & Google Ads**: High-ROAS paid acquisition, dynamic product ads, and creative split-testing matrices.
+9. **Content Creation**: Brand storytelling, high-converting copywriting, and visual asset libraries.
+10. **Social Media Management**: Content calendar strategy, active community curation, and platform-specific visual feeds.
+11. **Social Media & Viral Meme Marketing**: Pop-culture moment marketing, Hinglish & global viral hooks, and creator alliances.
+12. **AI Video Generation**: Synthetic media workflows, dynamic ad variations, and AI script-to-screen pipelines.
+13. **Graphic Designing & Brand Identity**: Bespoke wordmarks, luxury tactile packaging, 3D mockups, and spatial branding.
+14. **Content Marketing**: Thought leadership whitepapers, SEO pillar articles, and retention email drips.
+15. **Cinematic Video Editing & Public Relations**: High-retention Instagram Reels/YouTube Shorts, commercial films, sound design, and executive PR placements.
+
+## Resident Guild Specialists
+- [Naman — Developer & Solution Creator (The System Architect & Probability Builder)](https://anshandco.com/?portfolio=naman)
+- [Ankit — Creative Media Specialist (The Digital Storyteller & Visual Content Architect)](https://anshandco.com/?portfolio=member-02)
+- [Vanshika — Digital Media & Operations Specialist (The Multi-Disciplinary Digital Architect)](https://anshandco.com/?portfolio=member-03)
+- [Ankita — Graphic, Brand & Visual Identity Designer (The Brand Identity Stylist)](https://anshandco.com/?portfolio=member-04)
+- [Sharad — B2B Growth & Business Development Specialist (The Commercial Architect)](https://anshandco.com/?portfolio=member-05)
+- [Arpit — Digital Growth Strategist & AI Media Specialist (The Algorithmic Growth Scientist)](https://anshandco.com/?portfolio=member-06)
+- [Hardeep — Creative Director & Multi-Disciplinary Designer (The Visual Storyteller)](https://anshandco.com/?portfolio=hardeep)

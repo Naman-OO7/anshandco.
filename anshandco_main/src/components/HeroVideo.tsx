@@ -82,6 +82,7 @@ export const HeroVideo: React.FC = () => {
           <video
             ref={videoRef}
             id="hero-video"
+            src="/hero-vid.mp4"
             onClick={handleVideoClick}
             autoPlay
             loop
@@ -96,8 +97,11 @@ export const HeroVideo: React.FC = () => {
             }}
             onError={(e) => {
               const video = e.currentTarget;
-              if (!video.src.endsWith('/our-reveal.mp4')) {
-                video.src = '/our-reveal.mp4';
+              if (!video.src.includes('1778852713264-hero-vid.mp4')) {
+                video.src = 'https://pub-a23acf44682e42368d7e030f3e6be365.r2.dev/1778852713264-hero-vid.mp4';
+                video.play().catch(() => {});
+              } else if (!video.src.endsWith('/hero-vid.mp4')) {
+                video.src = '/hero-vid.mp4';
                 video.play().catch(() => {});
               }
             }}
@@ -105,15 +109,11 @@ export const HeroVideo: React.FC = () => {
             className="w-full h-full object-cover transition-transform duration-200 ease-out"
           >
             <source
+              src="/hero-vid.mp4"
+              type="video/mp4"
+            />
+            <source
               src="https://pub-a23acf44682e42368d7e030f3e6be365.r2.dev/1778852713264-hero-vid.mp4"
-              type="video/mp4"
-            />
-            <source
-              src="/our-reveal.mp4"
-              type="video/mp4"
-            />
-            <source
-              src="/main_video.mp4"
               type="video/mp4"
             />
           </video>

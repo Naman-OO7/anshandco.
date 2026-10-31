@@ -100,7 +100,7 @@ export const WhoWeArePage: React.FC<WhoWeArePageProps> = ({
                     >
                       <img
                         src={avatar}
-                        alt={member.name}
+                        alt={`${member.name} — ${member.role} (${member.creativeRole}) driving brand custodianship and AI services at ANSH&CO`}
                         referrerPolicy="no-referrer"
                         onError={(e) => {
                           const map: Record<string, string> = {
