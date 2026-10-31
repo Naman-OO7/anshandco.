@@ -9,6 +9,7 @@ export const BrandReelDivider: React.FC = () => {
         {!videoError ? (
           <video
             src="https://file.garden/aqpuSRZZW6ZbIllx/main_video.mp4"
+            poster="/main_video-poster.jpg"
             autoPlay
             loop
             muted

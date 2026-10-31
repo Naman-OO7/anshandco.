@@ -24,6 +24,49 @@
       <video:title>ANSH&amp;CO Official Brand Showreel — Brand Custodianship &amp; AI Solutions</video:title>
       <video:description>ANSH&amp;CO in-house creative, Next.js web engineering, AI workflow automation, and brand custodianship showreel.</video:description>
       <video:content_loc>https://anshandco.com/hero-vid.mp4</video:content_loc>
+      <video:publication_date>2026-01-15T08:00:00+05:30</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/main_video-poster.jpg</video:thumbnail_loc>
+      <video:title>ANSH&amp;CO Studio Showcase Reel — Creative Direction, Web Engineering &amp; AI Motion</video:title>
+      <video:description>In-house studio reel demonstrating ANSH&amp;CO brand custodianship, multidisciplinary design, custom software architecture, and cinematic production.</video:description>
+      <video:content_loc>https://anshandco.com/main_video.mp4</video:content_loc>
+      <video:publication_date>2026-01-20T08:00:00+05:30</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/feature_video-poster.jpg</video:thumbnail_loc>
+      <video:title>AI Business Workflow Automation &amp; Custom CRM Pipeline by ANSH&amp;CO</video:title>
+      <video:description>How ANSH&amp;CO engineers trigger-based AI workflow automations that capture leads from websites and WhatsApp and sync custom CRM pipelines automatically.</video:description>
+      <video:content_loc>https://anshandco.com/feature_video.mp4</video:content_loc>
+      <video:publication_date>2026-02-10T08:00:00+05:30</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/our-reveal-poster.jpg</video:thumbnail_loc>
+      <video:title>OUR REVEAL — ANSH&amp;CO Signature Brand Identity &amp; Kinetic Logo Animation</video:title>
+      <video:description>Signature kinetic brandmark reveal, luxury spatial collateral, and visual identity system crafted in-house by ANSH&amp;CO.</video:description>
+      <video:content_loc>https://anshandco.com/our-reveal.mp4</video:content_loc>
+      <video:publication_date>2026-02-18T08:00:00+05:30</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/liquid-chrome-poster.jpg</video:thumbnail_loc>
+      <video:title>ANSH&amp;CO. PROFESSIONAL — 3D Liquid Chrome Identity &amp; Packaging System Reveal</video:title>
+      <video:description>3D liquid chrome logo reveal, luxury salon packaging system, and AI creative engineering showcase by ANSH&amp;CO Professional.</video:description>
+      <video:content_loc>https://anshandco.com/liquid-chrome-logo-reveal.mp4</video:content_loc>
+      <video:publication_date>2026-03-01T08:00:00+05:30</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/feature_video2-poster.jpg</video:thumbnail_loc>
+      <video:title>ORGANIC SEO &amp; GROWTH ENGINE — Technical SEO &amp; Search Dominance by ANSH&amp;CO</video:title>
+      <video:description>Technical SEO architecture, AEO/GEO search optimization, and organic customer acquisition funnels engineered by ANSH&amp;CO.</video:description>
+      <video:content_loc>https://anshandco.com/feature_video2.mp4</video:content_loc>
+      <video:publication_date>2026-03-12T08:00:00+05:30</video:publication_date>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/meme3-poster.jpg</video:thumbnail_loc>
+      <video:title>TERA BHAI SAMBHAL LEGA — Viral Reels &amp; High-Converting Ad Strategy by ANSH&amp;CO</video:title>
+      <video:description>Viral short-form video reels, pop-culture creative strategy, and high-converting digital ad campaigns produced by ANSH&amp;CO.</video:description>
+      <video:content_loc>https://anshandco.com/meme3.mp4</video:content_loc>
+      <video:publication_date>2026-03-20T08:00:00+05:30</video:publication_date>
     </video:video>
   </url>
 
@@ -62,7 +105,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/m1.jpg</image:loc>
+      <image:loc>https://anshandco.com/m1.jpg</image:loc>
       <image:title>High-Speed Next.js Web Development &amp; Conversion Rate Optimization by ANSH&amp;CO</image:title>
     </image:image>
   </url>
@@ -73,7 +116,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/m3.jpg</image:loc>
+      <image:loc>https://anshandco.com/m3.jpg</image:loc>
       <image:title>Viral Meme Marketing Strategy &amp; High-Converting Ad Campaigns by ANSH&amp;CO</image:title>
     </image:image>
   </url>
@@ -87,7 +130,8 @@
       <video:thumbnail_loc>https://anshandco.com/feature_video-poster.jpg</video:thumbnail_loc>
       <video:title>AI Business Workflow Automation &amp; Custom CRM Pipeline Engineering by ANSH&amp;CO</video:title>
       <video:description>Intelligent AI workflow automations and trigger-based CRM pipelines engineered by ANSH&amp;CO.</video:description>
-      <video:content_loc>https://file.garden/aqpuSRZZW6ZbIllx/feature_video.mp4</video:content_loc>
+      <video:content_loc>https://anshandco.com/feature_video.mp4</video:content_loc>
+      <video:publication_date>2026-02-10T08:00:00+05:30</video:publication_date>
     </video:video>
   </url>
 
@@ -97,7 +141,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/meme1.jpg</image:loc>
+      <image:loc>https://anshandco.com/meme1.jpg</image:loc>
       <image:title>Performance Marketing &amp; Brand Dominance Strategy by ANSH&amp;CO</image:title>
     </image:image>
   </url>
@@ -108,7 +152,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://file.garden/aqpuSRZZW6ZbIllx/meme2.jpg</image:loc>
+      <image:loc>https://anshandco.com/meme2.jpg</image:loc>
       <image:title>Cinematic Viral Video Editing &amp; Short-Form Reel Production by ANSH&amp;CO</image:title>
     </image:image>
   </url>
@@ -119,10 +163,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <video:video>
-      <video:thumbnail_loc>https://anshandco.com/anshandco-poster.jpg</video:thumbnail_loc>
-      <video:title>ANSH&amp;CO Signature Brand Identity Reveal</video:title>
+      <video:thumbnail_loc>https://anshandco.com/our-reveal-poster.jpg</video:thumbnail_loc>
+      <video:title>OUR REVEAL — ANSH&amp;CO Signature Brand Identity &amp; Kinetic Logo Animation</video:title>
       <video:description>Kinetic brandmark reveal and luxury visual identity system by ANSH&amp;CO.</video:description>
-      <video:content_loc>https://file.garden/aqpuSRZZW6ZbIllx/anshandco_logo.mp4</video:content_loc>
+      <video:content_loc>https://anshandco.com/our-reveal.mp4</video:content_loc>
+      <video:publication_date>2026-02-18T08:00:00+05:30</video:publication_date>
     </video:video>
   </url>
 
@@ -135,7 +180,8 @@
       <video:thumbnail_loc>https://anshandco.com/liquid-chrome-poster.jpg</video:thumbnail_loc>
       <video:title>ANSH&amp;CO Professional Liquid Chrome 3D Brand Reveal</video:title>
       <video:description>3D liquid chrome motion identity, packaging system, and AI creative engineering by ANSH&amp;CO.</video:description>
-      <video:content_loc>https://file.garden/aqpuSRZZW6ZbIllx/Liquid_chrome_logo_reveal.mp4</video:content_loc>
+      <video:content_loc>https://anshandco.com/liquid-chrome-logo-reveal.mp4</video:content_loc>
+      <video:publication_date>2026-03-01T08:00:00+05:30</video:publication_date>
     </video:video>
   </url>
 
@@ -159,7 +205,8 @@
       <video:thumbnail_loc>https://anshandco.com/feature_video2-poster.jpg</video:thumbnail_loc>
       <video:title>Organic SEO &amp; Search Dominance Growth Engine by ANSH&amp;CO</video:title>
       <video:description>Technical SEO architecture and organic customer acquisition funnels engineered by ANSH&amp;CO.</video:description>
-      <video:content_loc>https://file.garden/aqpuSRZZW6ZbIllx/feature_video2.mp4</video:content_loc>
+      <video:content_loc>https://anshandco.com/feature_video2.mp4</video:content_loc>
+      <video:publication_date>2026-03-12T08:00:00+05:30</video:publication_date>
     </video:video>
   </url>
 
@@ -168,6 +215,13 @@
     <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://anshandco.com/meme3-poster.jpg</video:thumbnail_loc>
+      <video:title>TERA BHAI SAMBHAL LEGA — Viral Reels &amp; High-Converting Ad Strategy by ANSH&amp;CO</video:title>
+      <video:description>Viral short-form video reels, pop-culture creative strategy, and high-converting digital ad campaigns produced by ANSH&amp;CO.</video:description>
+      <video:content_loc>https://anshandco.com/meme3.mp4</video:content_loc>
+      <video:publication_date>2026-03-20T08:00:00+05:30</video:publication_date>
+    </video:video>
   </url>
 
   <!-- Resident Guild Specialist Portfolios -->
