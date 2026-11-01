@@ -75,6 +75,7 @@
         try {
           var params = new URLSearchParams(window.location.search);
           var page = params.get('page');
+          var hasQueryPage = params.has('page');
           var caseId = params.get('case');
           var portfolio = params.get('portfolio') || params.get('member');
           var newsId = params.get('news');
@@ -90,22 +91,22 @@
 
           var pageMeta = {
             'what-we-are': {
-              url: 'https://anshandco.com/?page=what-we-are',
+              url: hasQueryPage ? 'https://anshandco.com/?page=what-we-are' : 'https://anshandco.com/what-we-are',
               title: 'What We Are? | Brand Custodian & AI Engineering Studio — ANSH&CO',
               desc: 'Discover ANSH&CO’s 4 core pillars: Strategic Rigor, Visual Architecture, Bespoke Code & AI, and Long-Term Brand Custodianship in Dehradun, India.'
             },
             'who-we-are': {
-              url: 'https://anshandco.com/?page=who-we-are',
+              url: hasQueryPage ? 'https://anshandco.com/?page=who-we-are' : 'https://anshandco.com/who-we-are',
               title: 'Who We Are? | Multidisciplinary Engineers, Designers & Strategists — ANSH&CO',
               desc: 'Meet the 100% in-house collective of full-stack engineers, AI architects, brand strategists, and master video editors at ANSH&CO Studios in Dehradun.'
             },
             'what-we-provide': {
-              url: 'https://anshandco.com/?page=what-we-provide',
+              url: hasQueryPage ? 'https://anshandco.com/?page=what-we-provide' : 'https://anshandco.com/what-we-provide',
               title: 'What We Provide? | Next.js Web Dev, AI Automation, Branding & SEO — ANSH&CO',
               desc: 'Explore ANSH&CO capabilities: Custom React & Next.js Web Engineering, AI Workflow & CRM Automation, Brand Identity, Technical SEO, and Viral Reel Production.'
             },
             'who-trust-us': {
-              url: 'https://anshandco.com/?page=who-trust-us',
+              url: hasQueryPage ? 'https://anshandco.com/?page=who-trust-us' : 'https://anshandco.com/who-trust-us',
               title: 'Who Trust Us? | Enterprise Partners & Client Case Studies — ANSH&CO',
               desc: 'Trusted by global leaders including Warner Bros. Discovery, The Coffee Bean & Tea Leaf, Kanpeki, Bharatiyam Beverages, T&T Group, and Disha Publication.'
             }
@@ -434,8 +435,8 @@
               "name": "What we are?",
               "item": {
                 "@type": "WebPage",
-                "@id": "https://anshandco.com/?page=what-we-are",
-                "url": "https://anshandco.com/?page=what-we-are",
+                "@id": "https://anshandco.com/what-we-are",
+                "url": "https://anshandco.com/what-we-are",
                 "name": "What we are? — Brand Custodian & AI Engineering Studio"
               }
             },
@@ -445,8 +446,8 @@
               "name": "Who we are?",
               "item": {
                 "@type": "WebPage",
-                "@id": "https://anshandco.com/?page=who-we-are",
-                "url": "https://anshandco.com/?page=who-we-are",
+                "@id": "https://anshandco.com/who-we-are",
+                "url": "https://anshandco.com/who-we-are",
                 "name": "Who we are? — Multidisciplinary In-House Leadership & Team"
               }
             },
@@ -456,8 +457,8 @@
               "name": "What we provide?",
               "item": {
                 "@type": "WebPage",
-                "@id": "https://anshandco.com/?page=what-we-provide",
-                "url": "https://anshandco.com/?page=what-we-provide",
+                "@id": "https://anshandco.com/what-we-provide",
+                "url": "https://anshandco.com/what-we-provide",
                 "name": "What we provide? — Next.js Web Dev, AI Automation, Branding & SEO"
               }
             },
@@ -467,8 +468,8 @@
               "name": "Who trust us?",
               "item": {
                 "@type": "WebPage",
-                "@id": "https://anshandco.com/?page=who-trust-us",
-                "url": "https://anshandco.com/?page=who-trust-us",
+                "@id": "https://anshandco.com/who-trust-us",
+                "url": "https://anshandco.com/who-trust-us",
                 "name": "Who trust us? — Enterprise Partners & Client Case Studies"
               }
             }
@@ -838,10 +839,14 @@
         <nav aria-label="Primary Navigation">
           <a href="https://anshandco.com/">Home</a>
           <a href="https://anshandco.com/about">About Us</a>
-          <a href="https://anshandco.com/?page=what-we-are">What we are?</a>
-          <a href="https://anshandco.com/?page=who-we-are">Who we are?</a>
-          <a href="https://anshandco.com/?page=what-we-provide">What we provide?</a>
-          <a href="https://anshandco.com/?page=who-trust-us">Who Trust us?</a>
+          <a href="https://anshandco.com/what-we-are">What we are?</a>
+          <a href="https://anshandco.com/who-we-are">Who we are?</a>
+          <a href="https://anshandco.com/what-we-provide">What we provide?</a>
+          <a href="https://anshandco.com/who-trust-us">Who Trust us?</a>
+          <a href="https://anshandco.com/services/ai-automation">AI Workflow Automation &amp; Custom CRM</a>
+          <a href="https://anshandco.com/services/web-engineering">Next.js Web Development &amp; Mobile Apps</a>
+          <a href="https://anshandco.com/services/brand-custodianship">Brand Custodianship &amp; Packaging Design</a>
+          <a href="https://anshandco.com/services/seo-growth">Technical SEO, AEO, GEO &amp; Viral Growth</a>
           <a href="https://anshandco.com/contact">Contact Us</a>
           <a href="https://anshandco.com/terms">Terms of Service</a>
           <a href="https://anshandco.com/privacy">Privacy Policy</a>
@@ -865,6 +870,14 @@
       </main>
       <footer class="sr-only">
         <a href="https://anshandco.com/about">About</a>
+        <a href="https://anshandco.com/what-we-are">What We Are</a>
+        <a href="https://anshandco.com/who-we-are">Our Team</a>
+        <a href="https://anshandco.com/what-we-provide">Capabilities</a>
+        <a href="https://anshandco.com/who-trust-us">Enterprise Clients</a>
+        <a href="https://anshandco.com/services/ai-automation">AI Automation</a>
+        <a href="https://anshandco.com/services/web-engineering">Next.js Engineering</a>
+        <a href="https://anshandco.com/services/brand-custodianship">Brand Identity</a>
+        <a href="https://anshandco.com/services/seo-growth">SEO &amp; Growth</a>
         <a href="https://anshandco.com/contact">Contact</a>
         <a href="https://anshandco.com/terms">Terms of Service</a>
         <a href="https://anshandco.com/privacy">Privacy Policy</a>
@@ -893,10 +906,14 @@
           <ul>
             <li><a href="https://anshandco.com/">Home — Where it begins?</a></li>
             <li><a href="https://anshandco.com/about">About Us — Company Overview &amp; Leadership</a></li>
-            <li><a href="https://anshandco.com/?page=what-we-are">What we are? — Brand Custodianship &amp; 4 Core Pillars</a></li>
-            <li><a href="https://anshandco.com/?page=who-we-are">Who we are? — In-House Engineers, Designers &amp; Strategists</a></li>
-            <li><a href="https://anshandco.com/?page=what-we-provide">What we provide? — Next.js Web Dev, AI Workflows &amp; Growth</a></li>
-            <li><a href="https://anshandco.com/?page=who-trust-us">Who Trust us? — Enterprise Partners &amp; Case Studies</a></li>
+            <li><a href="https://anshandco.com/what-we-are">What we are? — Brand Custodianship &amp; 4 Core Pillars</a></li>
+            <li><a href="https://anshandco.com/who-we-are">Who we are? — In-House Engineers, Designers &amp; Strategists</a></li>
+            <li><a href="https://anshandco.com/what-we-provide">What we provide? — Next.js Web Dev, AI Workflows &amp; Growth</a></li>
+            <li><a href="https://anshandco.com/who-trust-us">Who Trust us? — Enterprise Partners &amp; Case Studies</a></li>
+            <li><a href="https://anshandco.com/services/ai-automation">AI Workflow Automation &amp; Custom CRM Studio</a></li>
+            <li><a href="https://anshandco.com/services/web-engineering">High-Speed Next.js Web &amp; Mobile Engineering</a></li>
+            <li><a href="https://anshandco.com/services/brand-custodianship">Luxury Brand Identity, Packaging &amp; 3D Motion</a></li>
+            <li><a href="https://anshandco.com/services/seo-growth">Technical SEO, AEO, GEO &amp; Viral Growth Engine</a></li>
             <li><a href="https://anshandco.com/contact">Contact Us — Direct Leadership Desk</a></li>
             <li><a href="https://anshandco.com/terms">Terms of Service — Legal &amp; Engagement Terms</a></li>
             <li><a href="https://anshandco.com/privacy">Privacy Policy — Data Protection &amp; Confidentiality</a></li>

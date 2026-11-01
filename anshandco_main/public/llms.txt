@@ -13,10 +13,15 @@
 
 ## Primary Navigation & Deep Links
 - [Home — Where it begins?](https://anshandco.com/): Agency manifesto, showreel, selected case studies, service matrix, and FAQ.
-- [What we are? — Brand Custodian Manifesto & 5-Stage Methodology](https://anshandco.com/?page=what-we-are): Our 4 core pillars (Strategic Rigor, Visual Architecture, Bespoke Code & AI, Brand Custodianship) and 5-stage operating flywheel.
-- [Who we are? — The Resident Guild & 7 Core Specialists](https://anshandco.com/?page=who-we-are): Meet our in-house engineers, AI architects, creative directors, and growth strategists.
-- [What we provide? — 15 Specialized In-House Capabilities](https://anshandco.com/?page=what-we-provide): Engineering & Tech, Growth & Marketing, Creative & Content, and Media & Production.
-- [Who trust us? — Enterprise Partners & Client Testimonials](https://anshandco.com/?page=who-trust-us): Partnerships with Warner Bros. Discovery, The Coffee Bean & Tea Leaf, Kanpeki, Bharatiyam Beverages, T&T Group, Disha Publication, and the Embassy of Switzerland in India (SwitzerlandIndia80).
+- [What we are? — Brand Custodian Manifesto & 5-Stage Methodology](https://anshandco.com/what-we-are): Our 4 core pillars (Strategic Rigor, Visual Architecture, Bespoke Code & AI, Brand Custodianship) and 5-stage operating flywheel.
+- [Who we are? — The Resident Guild & 7 Core Specialists](https://anshandco.com/who-we-are): Meet our in-house engineers, AI architects, creative directors, and growth strategists.
+- [What we provide? — 15 Specialized In-House Capabilities](https://anshandco.com/what-we-provide): Engineering & Tech, Growth & Marketing, Creative & Content, and Media & Production.
+- [Who trust us? — Enterprise Partners & Client Testimonials](https://anshandco.com/who-trust-us): Partnerships with Warner Bros. Discovery, The Coffee Bean & Tea Leaf, Kanpeki, Bharatiyam Beverages, T&T Group, Disha Publication, and the Embassy of Switzerland in India (SwitzerlandIndia80).
+- [AI Workflow Automation & Custom CRM Studio](https://anshandco.com/services/ai-automation): Autonomous sales agents, WhatsApp/website lead capture, and custom CRM/ERP software.
+- [High-Speed Next.js Web & Mobile Engineering](https://anshandco.com/services/web-engineering): Sub-2-second React/Next.js web applications, headless e-commerce, and iOS/Android mobile apps.
+- [Brand Custodianship, Luxury Packaging & 3D Motion](https://anshandco.com/services/brand-custodianship): 3x IBDA 2026 winning visual identity, tactile packaging, and 3D liquid chrome reveals.
+- [Technical SEO, AEO, GEO & Viral Growth Engine](https://anshandco.com/services/seo-growth): Google & AI Answer Engine dominance, Meta/Google Ads, and 25M+ view viral reels.
+- [About Us](https://anshandco.com/about) | [Contact Us](https://anshandco.com/contact) | [Terms of Service](https://anshandco.com/terms) | [Privacy Policy](https://anshandco.com/privacy)
 
 ## 15 In-House Services & Capabilities
 1. **Web Development**: High-speed bespoke React & Next.js platforms, headless e-commerce, and Core Web Vitals optimization (99+ PageSpeed scores).

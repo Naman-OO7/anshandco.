@@ -6,12 +6,12 @@
   <link href="https://anshandco.com/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://pubsubhubbub.appspot.com/" rel="hub" />
   <id>https://anshandco.com/</id>
-  <updated>2026-04-17T00:00:00Z</updated>
-  <icon>https://anshandco.com/assets/aistudio/ansh_logo_d7f34171.jpg</icon>
-  <logo>https://anshandco.com/assets/aistudio/ansh_logo_d7f34171.jpg</logo>
+  <updated>2026-10-31T00:00:00Z</updated>
+  <icon>https://anshandco.com/ansh-brand-icon-192.png</icon>
+  <logo>https://anshandco.com/ansh_logo.jpg</logo>
   <author>
-    <name>ANSH&amp;CO (Anshul Sharma)</name>
-    <email>team@anshandco.com</email>
+    <name>ANSH&amp;CO Studios &amp; Headquarters</name>
+    <email>contact@anshandco.com</email>
     <uri>https://anshandco.com/</uri>
   </author>
   <rights>Copyright (c) 2026 ANSH&amp;CO. All rights reserved.</rights>

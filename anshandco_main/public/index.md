@@ -8,9 +8,10 @@
 ## Quick Links & Official Pages
 
 - **Homepage**: [https://anshandco.com/](https://anshandco.com/)
-- **About Us (What We Are & Who We Are)**: [https://anshandco.com/about](https://anshandco.com/about) | [https://anshandco.com/?page=what-we-are](https://anshandco.com/?page=what-we-are) | [https://anshandco.com/?page=who-we-are](https://anshandco.com/?page=who-we-are)
-- **Services & Capabilities (What We Provide)**: [https://anshandco.com/?page=what-we-provide](https://anshandco.com/?page=what-we-provide)
-- **Clients & Case Studies (Who Trust Us)**: [https://anshandco.com/?page=who-trust-us](https://anshandco.com/?page=who-trust-us)
+- **About Us (What We Are & Who We Are)**: [https://anshandco.com/about](https://anshandco.com/about) | [https://anshandco.com/what-we-are](https://anshandco.com/what-we-are) | [https://anshandco.com/who-we-are](https://anshandco.com/who-we-are)
+- **Services & Capabilities (What We Provide)**: [https://anshandco.com/what-we-provide](https://anshandco.com/what-we-provide)
+- **Specialized Service Studios**: [AI Automation](https://anshandco.com/services/ai-automation) | [Next.js Web Engineering](https://anshandco.com/services/web-engineering) | [Brand Custodianship](https://anshandco.com/services/brand-custodianship) | [Technical SEO & Growth](https://anshandco.com/services/seo-growth)
+- **Clients & Case Studies (Who Trust Us)**: [https://anshandco.com/who-trust-us](https://anshandco.com/who-trust-us)
 - **Contact Us**: [https://anshandco.com/contact](https://anshandco.com/contact)
 - **Terms of Service & Legal**: [https://anshandco.com/terms](https://anshandco.com/terms)
 - **Privacy Policy**: [https://anshandco.com/privacy](https://anshandco.com/privacy)

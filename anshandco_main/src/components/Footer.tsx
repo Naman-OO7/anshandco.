@@ -32,7 +32,7 @@ export const Footer: React.FC<FooterProps> = ({
           <ul className="flex flex-col gap-3 text-[14px] font-light text-neutral-300">
             <li>
               <a
-                href="/?page=what-we-are"
+                href="/what-we-are"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
@@ -46,7 +46,7 @@ export const Footer: React.FC<FooterProps> = ({
             </li>
             <li>
               <a
-                href="/?page=who-we-are"
+                href="/who-we-are"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
@@ -60,7 +60,7 @@ export const Footer: React.FC<FooterProps> = ({
             </li>
             <li>
               <a
-                href="/?page=what-we-provide"
+                href="/what-we-provide"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
@@ -74,7 +74,7 @@ export const Footer: React.FC<FooterProps> = ({
             </li>
             <li>
               <a
-                href="/?page=who-trust-us"
+                href="/who-trust-us"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
@@ -97,7 +97,7 @@ export const Footer: React.FC<FooterProps> = ({
           <ul className="flex flex-col gap-3 text-[14px] font-light text-neutral-300">
             <li>
               <a
-                href="/?page=what-we-provide"
+                href="/services/web-engineering"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
@@ -111,7 +111,7 @@ export const Footer: React.FC<FooterProps> = ({
             </li>
             <li>
               <a
-                href="/?page=what-we-provide"
+                href="/services/ai-automation"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
@@ -125,7 +125,7 @@ export const Footer: React.FC<FooterProps> = ({
             </li>
             <li>
               <a
-                href="/?page=what-we-provide"
+                href="/services/seo-growth"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
@@ -139,7 +139,7 @@ export const Footer: React.FC<FooterProps> = ({
             </li>
             <li>
               <a
-                href="/?page=what-we-provide"
+                href="/what-we-provide"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();
@@ -153,7 +153,7 @@ export const Footer: React.FC<FooterProps> = ({
             </li>
             <li>
               <a
-                href="/?page=what-we-provide"
+                href="/services/brand-custodianship"
                 onClick={(e) => {
                   if (!e.metaKey && !e.ctrlKey) {
                     e.preventDefault();

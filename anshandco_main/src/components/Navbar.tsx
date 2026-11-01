@@ -133,7 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <nav className="hidden lg:flex items-center gap-8 xl:gap-10 text-[14px] font-light">
           {navItems.filter((i) => i.page !== 'home').map((item) => {
             const isActive = currentPage === item.page;
-            const href = item.page === 'home' ? '/' : `/?page=${item.page}`;
+            const href = item.page === 'home' ? '/' : `/${item.page}`;
             return (
               <a
                 key={item.page}
@@ -269,7 +269,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </span>
             {navItems.map((item) => {
               const isActive = currentPage === item.page;
-              const href = item.page === 'home' ? '/' : `/?page=${item.page}`;
+              const href = item.page === 'home' ? '/' : `/${item.page}`;
               return (
                 <a
                   key={item.page}

@@ -46,14 +46,16 @@ export default function App() {
     registerAnshWebMCPTools();
   }, []);
 
-  // Handle initial URL parameters & history state (supports clean paths + ?page=, ?portfolio=, ?case=, ?news=)
+  // Handle initial URL parameters & history state (supports clean paths + /services/* + ?page=, ?portfolio=, ?case=, ?news=)
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const portfolioParam = params.get('portfolio') || params.get('member');
     const rawPath = window.location.pathname.replace(/^\/+|\/+$/g, '');
     const mappedPath: PageRoute | null =
-      rawPath === 'about'
+      rawPath === 'about' || rawPath === 'services/brand-custodianship'
         ? 'what-we-are'
+        : rawPath.startsWith('services/')
+        ? 'what-we-provide'
         : (['what-we-are', 'who-we-are', 'what-we-provide', 'who-trust-us', 'terms', 'privacy', 'contact'].includes(rawPath)
             ? (rawPath as PageRoute)
             : null);
@@ -158,6 +160,37 @@ export default function App() {
       'ANSH&CO is an in-house Brand Custodian, Next.js Web Engineering, AI Workflow Automation & Viral Marketing Studio in Dehradun serving global brands. Call +91 76684 22047.';
     let canonicalUrl = 'https://anshandco.com/';
 
+    const rawPath = window.location.pathname.replace(/^\/+|\/+$/g, '');
+    const searchParams = new URLSearchParams(window.location.search);
+    const hasQueryPage = searchParams.has('page');
+
+    const serviceRouteMeta: Record<string, { title: string; description: string; url: string }> = {
+      'services/ai-automation': {
+        title: 'AI Workflow Automation & Custom CRM Engineering Studio | ANSH&CO',
+        description:
+          'ANSH&CO engineers trigger-based AI workflow automations, autonomous sales agents, WhatsApp lead capture, and custom CRM/ERP software in Dehradun, India.',
+        url: 'https://anshandco.com/services/ai-automation'
+      },
+      'services/web-engineering': {
+        title: 'High-Speed Next.js Web Development & Mobile App Studio | ANSH&CO',
+        description:
+          'Bespoke React & Next.js web engineering, headless e-commerce, iOS/Android mobile apps, and 99+ PageSpeed Core Web Vitals optimization by ANSH&CO.',
+        url: 'https://anshandco.com/services/web-engineering'
+      },
+      'services/brand-custodianship': {
+        title: 'Luxury Brand Identity, Packaging Design & 3D Motion Studio | ANSH&CO',
+        description:
+          '3x India’s Best Design Awards (IBDA) 2026 winning brand custodianship, bespoke visual identity, luxury tactile packaging, and 3D liquid chrome reveals by ANSH&CO.',
+        url: 'https://anshandco.com/services/brand-custodianship'
+      },
+      'services/seo-growth': {
+        title: 'Technical SEO, AEO, GEO & Viral Performance Growth Agency | ANSH&CO',
+        description:
+          'Dominate Google Search, AI Answer Engines (ChatGPT, Perplexity, Gemini), Meta & Google Ads, and viral short-form video reels with ANSH&CO Growth Studio.',
+        url: 'https://anshandco.com/services/seo-growth'
+      }
+    };
+
     if (selectedCaseStudy) {
       title = `${selectedCaseStudy.title} — ${selectedCaseStudy.client} Case Study | ANSH&CO`;
       description = `${selectedCaseStudy.summary} Delivered by ANSH&CO Brand Custodianship & AI Engineering Studio.`;
@@ -177,26 +210,58 @@ export default function App() {
         description = `${member.name} (${member.role}) at ANSH&CO: ${member.tagline}`;
         canonicalUrl = `https://anshandco.com/?portfolio=${member.id}`;
       }
+    } else if (serviceRouteMeta[rawPath]) {
+      title = serviceRouteMeta[rawPath].title;
+      description = serviceRouteMeta[rawPath].description;
+      canonicalUrl = serviceRouteMeta[rawPath].url;
+    } else if (rawPath === 'about' && currentPage === 'what-we-are') {
+      title = 'About Us | ANSH&CO — Brand Custodians, AI Solutions & Web Engineering Studio';
+      description =
+        'About ANSH&CO: Independent 100% in-house Brand Custodianship, Next.js Web Engineering, AI Workflow Automation, Custom CRM/ERP & Viral Marketing Studio in Dehradun, India.';
+      canonicalUrl = 'https://anshandco.com/about';
     } else if (currentPage === 'what-we-are') {
       title = 'What We Are? | Brand Custodian & AI Engineering Studio — ANSH&CO';
       description =
         'Discover ANSH&CO’s 4 core pillars: Strategic Rigor, Visual Architecture, Bespoke Code & AI, and Long-Term Brand Custodianship in Dehradun, India.';
-      canonicalUrl = 'https://anshandco.com/?page=what-we-are';
+      canonicalUrl = hasQueryPage
+        ? 'https://anshandco.com/?page=what-we-are'
+        : 'https://anshandco.com/what-we-are';
     } else if (currentPage === 'who-we-are') {
       title = 'Who We Are? | Multidisciplinary Engineers, Designers & Strategists — ANSH&CO';
       description =
         'Meet the 100% in-house collective of full-stack engineers, AI architects, brand strategists, and master video editors at ANSH&CO Studios in Dehradun.';
-      canonicalUrl = 'https://anshandco.com/?page=who-we-are';
+      canonicalUrl = hasQueryPage
+        ? 'https://anshandco.com/?page=who-we-are'
+        : 'https://anshandco.com/who-we-are';
     } else if (currentPage === 'what-we-provide') {
       title = 'What We Provide? | Next.js Web Dev, AI Automation, Branding & SEO — ANSH&CO';
       description =
         'Explore ANSH&CO capabilities: Custom React & Next.js Web Engineering, AI Workflow & CRM Automation, Brand Identity, Technical SEO, and Viral Reel Production.';
-      canonicalUrl = 'https://anshandco.com/?page=what-we-provide';
+      canonicalUrl = hasQueryPage
+        ? 'https://anshandco.com/?page=what-we-provide'
+        : 'https://anshandco.com/what-we-provide';
     } else if (currentPage === 'who-trust-us') {
       title = 'Who Trust Us? | Enterprise Partners & Client Case Studies — ANSH&CO';
       description =
         'Trusted by global leaders including Warner Bros. Discovery, The Coffee Bean & Tea Leaf, Kanpeki, Bharatiyam Beverages, T&T Group, and Disha Publication.';
-      canonicalUrl = 'https://anshandco.com/?page=who-trust-us';
+      canonicalUrl = hasQueryPage
+        ? 'https://anshandco.com/?page=who-trust-us'
+        : 'https://anshandco.com/who-trust-us';
+    } else if (currentPage === 'contact') {
+      title = 'Contact Us | ANSH&CO — Speak With Studio Leadership';
+      description =
+        'Contact ANSH&CO Studios & Headquarters in Aman Vihar, Dehradun, India. Call +91 76684 22047 or +91 91527 62613, or email contact@anshandco.com.';
+      canonicalUrl = 'https://anshandco.com/contact';
+    } else if (currentPage === 'terms') {
+      title = 'Terms of Service | ANSH&CO — Legal & Commercial Terms';
+      description =
+        'Official Terms of Service, intellectual property ownership, milestone billing, and AI content usage policy for ANSH&CO (anshandco.com).';
+      canonicalUrl = 'https://anshandco.com/terms';
+    } else if (currentPage === 'privacy') {
+      title = 'Privacy Policy | ANSH&CO — Data Protection & Confidentiality';
+      description =
+        'Official Privacy Policy, enterprise NDA protection, and data handling practices of ANSH&CO Studios & Headquarters (anshandco.com).';
+      canonicalUrl = 'https://anshandco.com/privacy';
     }
 
     document.title = title;
@@ -251,7 +316,7 @@ export default function App() {
         '@type': 'ListItem',
         position: 2,
         name: 'Who we are?',
-        item: 'https://anshandco.com/?page=who-we-are'
+        item: 'https://anshandco.com/who-we-are'
       });
       if (member) {
         breadcrumbItems.push({
@@ -261,33 +326,53 @@ export default function App() {
           item: `https://anshandco.com/?portfolio=${member.id}`
         });
       }
+    } else if (serviceRouteMeta[rawPath]) {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: 'What we provide?',
+        item: 'https://anshandco.com/what-we-provide'
+      });
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 3,
+        name: serviceRouteMeta[rawPath].title.split('|')[0].trim(),
+        item: serviceRouteMeta[rawPath].url
+      });
     } else if (currentPage === 'what-we-are') {
       breadcrumbItems.push({
         '@type': 'ListItem',
         position: 2,
         name: 'What we are?',
-        item: 'https://anshandco.com/?page=what-we-are'
+        item: canonicalUrl
       });
     } else if (currentPage === 'who-we-are') {
       breadcrumbItems.push({
         '@type': 'ListItem',
         position: 2,
         name: 'Who we are?',
-        item: 'https://anshandco.com/?page=who-we-are'
+        item: canonicalUrl
       });
     } else if (currentPage === 'what-we-provide') {
       breadcrumbItems.push({
         '@type': 'ListItem',
         position: 2,
         name: 'What we provide?',
-        item: 'https://anshandco.com/?page=what-we-provide'
+        item: canonicalUrl
       });
     } else if (currentPage === 'who-trust-us') {
       breadcrumbItems.push({
         '@type': 'ListItem',
         position: 2,
         name: 'Who trust us?',
-        item: 'https://anshandco.com/?page=who-trust-us'
+        item: canonicalUrl
+      });
+    } else if (currentPage === 'contact' || currentPage === 'terms' || currentPage === 'privacy') {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: title.split('|')[0].trim(),
+        item: canonicalUrl
       });
     }
 
@@ -336,11 +421,21 @@ export default function App() {
         const searchParams = new URLSearchParams(window.location.search);
         const pParam = searchParams.get('portfolio') || searchParams.get('member');
         const pgParam = searchParams.get('page') as PageRoute | null;
+        const cleanPath = window.location.pathname.replace(/^\/+|\/+$/g, '');
+        const pathRoute: PageRoute | null =
+          cleanPath === 'about' || cleanPath === 'services/brand-custodianship'
+            ? 'what-we-are'
+            : cleanPath.startsWith('services/')
+            ? 'what-we-provide'
+            : (['what-we-are', 'who-we-are', 'what-we-provide', 'who-trust-us', 'terms', 'privacy', 'contact'].includes(cleanPath)
+                ? (cleanPath as PageRoute)
+                : null);
+
         if (pParam) {
           setCurrentPage('who-we-are');
           setSelectedMemberId(pParam);
-        } else if (pgParam) {
-          setCurrentPage(pgParam);
+        } else if (pgParam || pathRoute) {
+          setCurrentPage((pgParam || pathRoute) as PageRoute);
           setSelectedMemberId(null);
         } else {
           setCurrentPage('home');
@@ -380,7 +475,7 @@ export default function App() {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    const targetUrl = page === 'home' ? '/' : `?page=${page}`;
+    const targetUrl = page === 'home' ? '/' : `/${page}`;
     const stateObj = { page, memberId: null, modal: null };
     if (replace) {
       window.history.replaceState(stateObj, '', targetUrl);
@@ -395,7 +490,7 @@ export default function App() {
     if (memberId) {
       window.history.pushState({ page: 'who-we-are', memberId, modal: null }, '', `?portfolio=${memberId}`);
     } else {
-      window.history.pushState({ page: 'who-we-are', memberId: null, modal: null }, '', '?page=who-we-are');
+      window.history.pushState({ page: 'who-we-are', memberId: null, modal: null }, '', '/who-we-are');
     }
   };
 
