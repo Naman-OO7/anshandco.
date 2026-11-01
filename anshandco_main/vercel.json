@@ -87,7 +87,7 @@
       "destination": "/.well-known/mcp/server-card.json"
     },
     {
-      "source": "/((?!\\.well-known/|assets/|services/|what-we-are|who-we-are|what-we-provide|who-trust-us|about|contact|terms|privacy|news|index\\.md|llms\\.txt|llms-full\\.txt|robots\\.txt|sitemap\\.xml|feed\\.xml|rss\\.xml|site\\.webmanifest|favicon|ansh-brand-|android-chrome|apple-touch-icon|logo\\.png|ansh_logo\\.jpg|ansh-logo\\.jpg|.*\\.(?:png|jpg|jpeg|gif|webp|svg|ico|mp4|webm|js|css|json|xml|txt|md|webmanifest|woff2?)$).*)",
+      "source": "/((?!\\.well-known/|assets/|services/|digital-marketing-agency-dehradun|web-development-agency-dehradun|ai-automation-agency-dehradun|what-we-are|who-we-are|what-we-provide|who-trust-us|about|contact|terms|privacy|news|index\\.md|llms\\.txt|llms-full\\.txt|robots\\.txt|sitemap\\.xml|feed\\.xml|rss\\.xml|site\\.webmanifest|favicon|ansh-brand-|android-chrome|apple-touch-icon|logo\\.png|ansh_logo\\.jpg|ansh-logo\\.jpg|.*\\.(?:png|jpg|jpeg|gif|webp|svg|ico|mp4|webm|js|css|json|xml|txt|md|webmanifest|woff2?)$).*)",
       "destination": "/index.html"
     }
   ]

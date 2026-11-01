@@ -32,7 +32,10 @@ const staticRoutes = [
   'services/ai-automation',
   'services/web-engineering',
   'services/brand-custodianship',
-  'services/seo-growth'
+  'services/seo-growth',
+  'digital-marketing-agency-dehradun',
+  'web-development-agency-dehradun',
+  'ai-automation-agency-dehradun'
 ];
 
 let updatedCount = 0;

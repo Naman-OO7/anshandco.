@@ -54,7 +54,10 @@ export default function App() {
     const mappedPath: PageRoute | null =
       rawPath === 'about' || rawPath === 'services/brand-custodianship'
         ? 'what-we-are'
-        : rawPath.startsWith('services/')
+        : rawPath.startsWith('services/') ||
+          rawPath === 'digital-marketing-agency-dehradun' ||
+          rawPath === 'web-development-agency-dehradun' ||
+          rawPath === 'ai-automation-agency-dehradun'
         ? 'what-we-provide'
         : (['what-we-are', 'who-we-are', 'what-we-provide', 'who-trust-us', 'terms', 'privacy', 'contact'].includes(rawPath)
             ? (rawPath as PageRoute)
@@ -166,28 +169,46 @@ export default function App() {
 
     const serviceRouteMeta: Record<string, { title: string; description: string; url: string }> = {
       'services/ai-automation': {
-        title: 'AI Workflow Automation & Custom CRM Engineering Studio | ANSH&CO',
+        title: 'AI Automation, Custom CRM & Workflow Engineering Agency in Dehradun | ANSH&CO',
         description:
-          'ANSH&CO engineers trigger-based AI workflow automations, autonomous sales agents, WhatsApp lead capture, and custom CRM/ERP software in Dehradun, India.',
+          'Leading AI Automation & Custom CRM/ERP Software Agency in Dehradun (Dehradoon). ANSH&CO engineers trigger-based AI workflows, autonomous sales agents, and WhatsApp lead capture. Call +91 76684 22047.',
         url: 'https://anshandco.com/services/ai-automation'
       },
       'services/web-engineering': {
-        title: 'High-Speed Next.js Web Development & Mobile App Studio | ANSH&CO',
+        title: 'Website Development, Next.js Web Engineering & App Agency in Dehradun | ANSH&CO',
         description:
-          'Bespoke React & Next.js web engineering, headless e-commerce, iOS/Android mobile apps, and 99+ PageSpeed Core Web Vitals optimization by ANSH&CO.',
+          'Best Website Development & Mobile App Agency in Dehradun (Dehradoon). Bespoke React & Next.js web engineering, headless e-commerce, and 99+ PageSpeed optimization by ANSH&CO. Call +91 76684 22047.',
         url: 'https://anshandco.com/services/web-engineering'
       },
       'services/brand-custodianship': {
-        title: 'Luxury Brand Identity, Packaging Design & 3D Motion Studio | ANSH&CO',
+        title: 'Branding, Luxury Packaging Design & 3D Motion Agency in Dehradun | ANSH&CO',
         description:
-          '3x India’s Best Design Awards (IBDA) 2026 winning brand custodianship, bespoke visual identity, luxury tactile packaging, and 3D liquid chrome reveals by ANSH&CO.',
+          '3x India’s Best Design Awards (IBDA) 2026 winning branding, logo identity, luxury packaging design, and 3D motion agency in Dehradun (Dehradoon), India. Call +91 76684 22047.',
         url: 'https://anshandco.com/services/brand-custodianship'
       },
       'services/seo-growth': {
-        title: 'Technical SEO, AEO, GEO & Viral Performance Growth Agency | ANSH&CO',
+        title: 'Best Digital Marketing, Technical SEO & Growth Agency in Dehradun | ANSH&CO',
         description:
-          'Dominate Google Search, AI Answer Engines (ChatGPT, Perplexity, Gemini), Meta & Google Ads, and viral short-form video reels with ANSH&CO Growth Studio.',
+          'Best Digital Marketing & Technical SEO Agency in Dehradun (Dehradoon). Dominate Google Search, AI Answer Engines, Meta & Google Ads, and viral video reels with ANSH&CO. Call +91 76684 22047.',
         url: 'https://anshandco.com/services/seo-growth'
+      },
+      'digital-marketing-agency-dehradun': {
+        title: 'Best Digital Marketing Agency in Dehradun | SEO, Meta Ads & Viral Growth — ANSH&CO',
+        description:
+          'Looking for the best digital marketing agency in Dehradun (Dehradoon)? ANSH&CO in Aman Vihar, Dehradun delivers Technical SEO, Meta & Google Ads, Social Media Marketing, and Viral Reels. Call +91 76684 22047.',
+        url: 'https://anshandco.com/digital-marketing-agency-dehradun'
+      },
+      'web-development-agency-dehradun': {
+        title: 'Website Development Agency in Dehradun | Next.js, E-Commerce & Mobile Apps — ANSH&CO',
+        description:
+          'Searching for the best website development agency in Dehradun (Dehradoon)? ANSH&CO engineers sub-2-second React & Next.js websites, e-commerce stores, and iOS/Android mobile apps in Dehradun. Call +91 76684 22047.',
+        url: 'https://anshandco.com/web-development-agency-dehradun'
+      },
+      'ai-automation-agency-dehradun': {
+        title: 'AI Automation Agency in Dehradun | Custom CRM, ERP & AI Agents — ANSH&CO',
+        description:
+          'Looking for AI automation in Dehradun (Dehradoon)? ANSH&CO builds trigger-based AI workflow automations, WhatsApp lead bots, autonomous AI sales agents, and custom CRM/ERP software in Dehradun. Call +91 76684 22047.',
+        url: 'https://anshandco.com/ai-automation-agency-dehradun'
       }
     };
 
@@ -425,7 +446,10 @@ export default function App() {
         const pathRoute: PageRoute | null =
           cleanPath === 'about' || cleanPath === 'services/brand-custodianship'
             ? 'what-we-are'
-            : cleanPath.startsWith('services/')
+            : cleanPath.startsWith('services/') ||
+              cleanPath === 'digital-marketing-agency-dehradun' ||
+              cleanPath === 'web-development-agency-dehradun' ||
+              cleanPath === 'ai-automation-agency-dehradun'
             ? 'what-we-provide'
             : (['what-we-are', 'who-we-are', 'what-we-provide', 'who-trust-us', 'terms', 'privacy', 'contact'].includes(cleanPath)
                 ? (cleanPath as PageRoute)
